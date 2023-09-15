@@ -1,0 +1,81 @@
+W---------------
+my social links
+---------------
+https://cohost.org/saltedslug
+https://status.cafe/users/saltedslug
+https://social.yesterweb.org/@saltedslug
+gemini://saltedslug.cities.yesterweb.org/
+
+---------------------
+site building credits
+---------------------
+https://www.fontconverter.io/en/ttf-to-woff2
+* This online utility converts .ttf (TrueType Font) files to the web-friendly .woff1 and .woff2 file types.
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+* This article (and accompanying cheatsheet) does a great job of explaining how CSS flexbox works.
+https://css-tricks.com/snippets/css/complete-guide-grid/
+* This article (and accompanying cheatsheet) does a great job of explaining how CSS grid works.
+https://developer.mozilla.org/en-US/docs/Web/CSS
+* The holy webdev docs. This is all you really need to know exactly how anything in CSS works. I'm a very traditional (read: stereotypical) sysadmin, so I'd rather read source docs than watch some annoying YouTuber explain a concept or read an ad-ridden article cobbled out by some poor 20 year-old intern.
+https://ezgif.com/
+* This is the most efficient web app I've find found for easy optimization, compression, and general tweaking of image files such as .jpegs, .pngs, and .gifs. It also does a few conversions such as .svg to .png and .webp to .gif.
+
+----------------------------
+repositories, software, etc.
+----------------------------
+https://winworldpc.com/
+WinWorld is an online museum dedicated to the preservation and sharing of vintage, abandoned, and pre-release software.
+
+personal blogs
+https://www.copetti.org/about/
+https://dom.ink/
+https://mattcolewilson.com/
+https://brisray.com/
+https://m15o.smol.pub/ & https://m15o.ichi.city/
+
+webrings
+https://webring.xxiivv.com/
+https://yesterweb.org/
+https://nightfall.city/
+https://hotlinewebring.club/
+https://webring.bucketfish.me/
+https://arandomsite.neocities.org/
+https://netloop.netlify.app/
+
+communities
+https://ichi.city/
+
+----------------------
+static site generators
+----------------------
+https://www.11ty.dev/
+
+--------------------------
+cool web utilities & tools
+--------------------------
+https://alternativeto.net/
+* see crowdsourced alternatives to any URL
+https://duckgroup.xyz/textart/
+* turn any image into text art (can even edit threshold, dithering, size)
+https://mutant.tech/about
+* alternative unicode library for more diverse and interesting emojis
+
+---------------------
+webdev learning tools
+---------------------
+https://codepip.com/games/grid-garden/
+* grid garden is a game designed to teach you how to use the css grid module.
+https://codepip.com/games/flexbox-froggy/
+* flexbox froggy is a game designed to teach you how to use the css flexbox module.
+https://grid.layoutit.com/
+* css grid generator
+https://cssgrid-generator.netlify.app/
+* another css grid generator
+
+gemini/smolweb stuff
+https://yesterweb.org/community/gemini/
+* what is gemini?
+https://gemini.circumlunar.space/docs/cheatsheet.gmi
+* gemtext cheat sheet
+https://LINKHERE
+* lagrange is my preferred gemini browser

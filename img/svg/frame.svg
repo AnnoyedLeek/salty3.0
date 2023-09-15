@@ -1,0 +1,45 @@
+<svg stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1409.72 156.87 976.13 192.08">
+<defs>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="111.846" id="Filter" width="70.015" x="1405.9" y="201.902">
+<feDropShadow dx="4.62157" dy="4.0793" flood-color="#0a0a0a" flood-opacity="0.4" in="SourceGraphic" result="Shadow" stdDeviation="3.37329"/>
+</filter>
+<linearGradient gradientTransform="matrix(1 0 0 1 371.709 -135.567)" gradientUnits="userSpaceOnUse" id="LinearGradient" x1="1075.53" x2="1075.39" y1="348.688" y2="379.829">
+<stop offset="0" stop-color="#6e7c78"/>
+<stop offset="1" stop-color="#4c6d72"/>
+</linearGradient>
+<linearGradient gradientTransform="matrix(1 0 0 1.01047 373.424 -80.8053)" gradientUnits="userSpaceOnUse" id="LinearGradient_2" x1="1075.53" x2="1075.39" y1="348.688" y2="379.829">
+<stop offset="0" stop-color="#6e7c78"/>
+<stop offset="1" stop-color="#4c6d72"/>
+</linearGradient>
+<linearGradient gradientTransform="matrix(1 0 0 1 372.32 -134.918)" gradientUnits="userSpaceOnUse" id="LinearGradient_3" x1="1067.38" x2="1061.23" y1="377.023" y2="408.832">
+<stop offset="0" stop-color="#6e7c78"/>
+<stop offset="1" stop-color="#4c6d72"/>
+</linearGradient>
+<linearGradient gradientTransform="matrix(1.33827 0 0 0.283537 1003.13 64.5036)" gradientUnits="userSpaceOnUse" id="LinearGradient_4" x1="339.013" x2="1044.02" y1="438" y2="626.15">
+<stop offset="0" stop-color="#58636b"/>
+<stop offset="1" stop-color="#444e56"/>
+</linearGradient>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="201.017" id="Filter_2" width="956.314" x="1441.22" y="161.538">
+<feDropShadow dx="7.21535" dy="9.1388" flood-color="#0a0a0a" flood-opacity="0.2" in="SourceGraphic" result="Shadow" stdDeviation="3.76712"/>
+</filter>
+<path d="M1486.11 195.659C1513.41 187.622 2323.88 183.359 2343.06 189.506C2362.25 195.659 2365.1 308.68 2342.78 314.177C2305.75 323.297 1520.16 323.005 1484.19 314.177C1464.86 309.433 1461.91 202.783 1486.11 195.659Z" id="Fill"/>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="220.036" id="Filter_3" width="975.386" x="1425.97" y="143.727">
+<feDropShadow dx="0" dy="0" flood-color="#e0ff7b" flood-opacity="0.5" in="SourceGraphic" result="Shadow" stdDeviation="17.1422"/>
+</filter>
+</defs>
+<g id="frame-copy" vectornator:layerName="frame copy">
+<path d="M1417.56 207.255C1417.56 207.255 1410.32 209.444 1410.55 223.74C1410.77 238.036 1414.51 238.631 1414.92 239.466C1414.92 239.466 1409.72 243.846 1409.72 252.431C1409.72 265.097 1415.92 267.427 1416.65 267.606C1416.65 267.606 1413.17 270.486 1412.61 275.139C1412.06 279.791 1411.93 286.184 1414.26 292.116C1416.58 298.048 1420.36 301.217 1426.46 301.235C1434.05 301.257 1449.38 299.972 1451.31 299.898C1454.8 299.763 1461.19 289.615 1462.7 289.121C1464.21 288.627 1454.68 291.528 1456.03 288.169C1457.37 284.811 1451.65 285.888 1451.65 285.888L1453.64 277.154L1455.32 273.691C1455.32 273.691 1456.29 271.232 1455.32 267.606C1455.2 267.159 1447.18 262.311 1447.86 256.125C1448.29 252.269 1452.52 248.545 1454.25 245.299C1455.3 243.336 1455.32 240.039 1455.32 240.039C1455.32 240.039 1446.86 231.133 1449.64 224.709C1452.42 218.284 1454.89 219.737 1455.32 217.86C1455.75 215.982 1454.17 212.152 1453.32 211.198C1452.48 210.243 1456.17 206.58 1454.22 206.518C1452.26 206.456 1420.12 205.636 1417.56 207.255Z" fill="#404c48" fill-rule="nonzero" filter="url(#Filter)" stroke="none" vectornator:layerName="Curve 54" vectornator:shadowAngle="0.723155" vectornator:shadowColor="#0a0a0a" vectornator:shadowOffset="6.16438" vectornator:shadowOpacity="0.4" vectornator:shadowRadius="6.74658"/>
+<path d="M1454.38 211.599C1456.89 211.846 1464.68 216.464 1464.12 216.917C1463.56 217.369 1462.18 218.459 1460.77 221.997C1459.36 225.535 1458.16 228.913 1458.56 233.408C1458.96 237.904 1459.88 238.227 1456.08 237.762C1452.29 237.297 1423.25 237.225 1422.3 236.895C1421.34 236.566 1415.45 234.719 1416.03 224.569C1416.16 222.341 1416.13 214.329 1420.05 212.118C1423.18 210.351 1454.38 211.599 1454.38 211.599Z" fill="url(#LinearGradient)" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Curve 55"/>
+<path d="M1456.2 269.537C1458.7 269.786 1466.39 274.91 1465.84 275.367C1465.28 275.824 1463.89 276.926 1462.48 280.501C1461.07 284.076 1459.88 287.489 1460.28 292.032C1460.68 296.574 1461.52 295.958 1457.72 295.488C1453.92 295.019 1429.31 298.303 1424.79 296.507C1423.85 296.134 1418.43 291.981 1417.75 283.1C1417.57 280.852 1417.62 273.84 1421.54 271.606C1424.67 269.821 1456.2 269.537 1456.2 269.537Z" fill="url(#LinearGradient_2)" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Curve 57"/>
+<path d="M1458.1 241.886C1464.39 242.834 1463 245.262 1461.98 246.338C1460.97 247.413 1458.47 251.651 1459.1 255.866C1459.72 260.081 1461.5 262.965 1460.99 263.576C1460.49 264.187 1461.82 265.141 1453.62 265.07C1445.41 264.999 1426.33 266.207 1423.28 265.602C1421.41 265.229 1417.98 262.964 1417.04 260.642C1415.47 256.737 1415.82 249.847 1417.04 247.086C1418.27 244.325 1420.36 241.946 1422.56 241.75C1431.23 240.977 1453.16 241.143 1458.1 241.886Z" fill="url(#LinearGradient_3)" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Curve 56"/>
+<path d="M1468.83 175.476C1511.1 161.703 2340.52 164.105 2352.7 170.005C2386.93 186.583 2382.39 326.801 2358.5 332.994C2332.45 339.747 1488.73 345.805 1464.25 332.994C1438.88 319.716 1442.18 184.158 1468.83 175.476Z" fill="url(#LinearGradient_4)" fill-rule="nonzero" filter="url(#Filter_2)" stroke="#32393e" stroke-linecap="butt" stroke-linejoin="round" stroke-width="7" vectornator:layerName="frame fill" vectornator:shadowAngle="0.902472" vectornator:shadowColor="#0a0a0a" vectornator:shadowOffset="11.6438" vectornator:shadowOpacity="0.2" vectornator:shadowRadius="7.53425"/>
+<g filter="url(#Filter_3)" vectornator:layerName="frame fill 1," vectornator:shadowAngle="0.535029" vectornator:shadowColor="#e0ff7b" vectornator:shadowOffset="0" vectornator:shadowOpacity="0.5" vectornator:shadowRadius="34.2844">
+<use fill="#353b2a" fill-rule="nonzero" stroke="none" xlink:href="#Fill"/>
+<mask height="134.325" id="StrokeMask" maskUnits="userSpaceOnUse" width="889.675" x="1468.83" y="186.583">
+<rect fill="#000000" height="134.325" stroke="none" width="889.675" x="1468.83" y="186.583"/>
+<use fill="#ffffff" fill-rule="evenodd" stroke="none" xlink:href="#Fill"/>
+</mask>
+<use fill="none" mask="url(#StrokeMask)" stroke="#252a1b" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.4" stroke-width="16" xlink:href="#Fill"/>
+</g>
+</g>
+</svg>

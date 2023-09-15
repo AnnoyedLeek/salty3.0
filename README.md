@@ -1,2 +1,2 @@
-# salty3.0
- saltedslug.net - revision 3
+# saltedslug.net 3.0
+New and improved! (again)

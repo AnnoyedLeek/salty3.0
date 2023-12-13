@@ -13,24 +13,25 @@
   --slugblack: #373737;
   --slugblue: #5acdb9;
   --slugyellow: #fff8a5;
-  --screen: #353b2a;
-  --sluggrey: #8c8988;
+  --sluggrey: #767676;
+  --slugwhite: #f2f2f2;
+  --slugtan: #a89984;
 }
 
 /* scrollbar */
 * {
   box-sizing: border-box;
-  scrollbar-color: var(--slugblue) #ababb5;
+  scrollbar-color: var(--sluggreen);
 	}
 
 ::-webkit-scrollbar {
-  background: #ababb5;
+  background: var(--slugblack);
 	width: 8px;
 	height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-	background: #ababb5;
+	background: var(--sluggrey);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -45,16 +46,29 @@ html, body{
   padding: 0;
   border: 0;
   outline: 0;
-  overflow: hidden;
   width: 100vw;
   height: 100vh;
 }
 
+/* overlay scanlines */
+/* shout out to kidwithtthechemicalz.neocities.org for pieces of this class! */
+.container::before {
+  content: "";
+  background-image: url(img/bg-overlay-scan.png);
+  background-repeat: repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: .4;
+  pointer-events: none;
+}
+
 body {
-  background-color: var(--slugblack);
-  background-image: url(img/bg.png);
-  background-repeat: repeat-y;
-  background-size: 100vw;
+  background-color: var(--slugtan);
   font-size: 1rem;
   font-family: monospace, system-ui, -apple-system;
 }
@@ -64,53 +78,81 @@ h1, h2, h3, h4 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+#wrapper {
+  background-image: url(img/bg.png);
+  background-size: 100vw;
+  display: flex;
+  align-self: stretch;
+  justify-self: stretch;
+  align-content: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
 /* grid items */
 .container {
+  background-image: url(test.png);
+  background-position: 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: grid; 
-  grid-template-columns: 2% 96% 2%; 
-  grid-template-rows: 225px auto 40px; 
+  grid-template-columns: 4% 92% 4%; 
+  grid-template-rows: 20% 70% 10%; 
   gap: 0px 0px; 
   grid-template-areas: 
-    ". header ."
-    ". main ."
-    ". footer ."; 
-  justify-content: stretch; 
-  align-content: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+    "header header header"
+    "border-left main border-right"
+    "footer footer footer"; 
+  justify-content: center; 
+  align-content: center; 
+  position: static;
+  width: 70%;
+  height: 90%;
+  padding: 0;
+  margin: auto;
 }
 
 .header {
-  background-color: var(--sluggreen);
-  justify-self: stretch; 
-  align-self: stretch; 
-  align-content: stretch;
-  grid-area: header; 
-  padding: 0 1rem;
+  grid-area: header;
+}
+
+.header img {
+  max-height: 100%;
+}
+
+.border-left {
+  background-color: var(--slugblue);
+  grid-area: border-left; 
+  width: 100%; 
+  height: 100%; 
 }
 
 .main {
   background-color: var(--slugyellow);
-  justify-self: stretch; 
-  align-self: stretch;
-  align-content: center; 
+  background-image: url(img/bg.png);
   grid-area: main; 
-  padding: 0.5rem 1rem;
-  margin: 0;
-  overflow-y: scroll;
+  width: 100%; 
+}
+
+.main iframe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.border-right {
+  background-color: var(--slugblue);
+  grid-area: border-right;
+  width: 100%; 
+  height: 100%; 
 }
 
 .footer {
-  background-color: var(--slugblue);
-  justify-self: stretch; 
-  align-self: stretch;
-  justify-content: space-between;
-  align-content: center;
-  grid-area: footer; 
-  display: flex;
-  flex-flow: row wrap;
-  padding: 0.5rem 1rem;
-  height: 40px;
+  background-color: var(--sluggreen);
+  grid-area: footer;
+  width: 100%; 
+  height: 100%; 
 }
 
 /* other classes */
@@ -146,13 +188,6 @@ h1, h2, h3, h4 {
 }
 
 /* animations */
-.glow img {
-    position:absolute;
-    max-height:90%;
-    top:50%;
-    left:50%;
-}
-
 .noglow {
   z-index: 2;
 }
@@ -188,7 +223,6 @@ h1, h2, h3, h4 {
 }
 
 .spin {
-  position: absolute;
   opacity: 0.80;
   animation: rotatey 6.5s linear infinite;
 }
@@ -202,5 +236,21 @@ h1, h2, h3, h4 {
     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);  }
   100% {
     transform: rotateX(0deg) rotateY(-360deg) rotateZ(0deg);
+  }
+}
+
+/* mobile stuff */
+@media (max-width: 600px) {
+  .border-left, .border-right {
+    display: none;
+  }
+  .container {
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer"; 
+  }
+  .main {
+    width: 100%;
   }
 }

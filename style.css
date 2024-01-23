@@ -346,22 +346,22 @@ h1, h2, h3, h4 {
 }
 
 #nav button:focus {
-  animation: glow-text 4s ease infinite;
-  -moz-animation: glow-text 4s ease infinite;
-  -webkit-animation: glow-text 4s ease infinite;
+  animation: glow-text 3s ease-in-out infinite;
+  -moz-animation: glow-text 3s ease-in-out infinite;
+  -webkit-animation: glow-text 3s ease-in-out infinite;
 }
 
 @keyframes glow-text {
   0%,
   100% {
-    text-shadow: 0 0 0.3vw rgba(203, 243, 41, 0.5), 0 0 0.6vw rgb(203, 243, 41, 0.5), 0 0 1vw rgb(203, 243, 41, 0.5), 0 0 1vw rgb(203, 243, 41, 0.4), 0 0 .4vw rgb(177, 251, 91, 0.65), 0 0 .1vw rgb(67, 119, 7,0.45);
+    text-shadow: 0 0 0.3vw rgba(203, 243, 41, 0.5), 0 0 0.6vw rgb(203, 243, 41, 0.2), 0 0 1vw rgb(203, 243, 41, 0.5), 0 0 1vw rgb(203, 243, 41, 0.4), 0 0 .4vw rgb(177, 251, 91, 0.65), 0 0 .1vw rgb(67, 119, 7,0.4);
     color: rgb(203, 243, 41, 0.85);
-    border-color: rgb(90, 205, 185);
+    border-color: rgb(97, 232, 209);
   }
   50% {
-    text-shadow: 0 0 .5vw rgba(85, 119, 7, 0.65), 0 0 0.25vw rgb(85, 119, 7, 0.6), 0 0 1vw rgb(85, 119, 7, 0.5), 0 0 1vw rgb(85, 119, 7, 0.75), 0 0 .2vw rgb(85, 119, 7, 0.75), 0 0 .1vw rgba(118, 160, 34, 0.7);
+    text-shadow: 0 0 .5vw rgba(85, 119, 7, 0.65), 0 0 0.25vw rgb(85, 119, 7, 0.6), 0 0 1vw rgb(85, 119, 7, 0.5), 0 0 1vw rgb(85, 119, 7, 0.75), 0 0 .2vw rgb(85, 119, 7, 0.7), 0 0 .1vw rgba(118, 160, 34, 0.6);
     color: rgba(183, 230, 28, 0.8);
-    border-color: rgb(90, 205, 185, .9);
+    border-color: rgb(90, 205, 185, .85);
   }
 }
 

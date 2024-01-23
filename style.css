@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'eurostile';
-  src: url(fonts/eurostile-ext-bold.woff), url(fonts/eurostile-ext-bold.woff2);
+  font-family: '04b';
+  src: url(fonts/04b_08.woff);
 }
 
 @font-face {
@@ -49,7 +49,7 @@ html, body{
 body {
   background-image: url(img/bg.png);
   background-size: 100vw;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   font-size: 1rem;
   font-family: monospace, system-ui, -apple-system;
   width: 100vw;
@@ -162,34 +162,29 @@ h1, h2, h3, h4 {
   left: 13.8%;
 }
 
-#nav-imood {
+#imood {
   position: relative;
   top: 11.4%;
   left: 14.5%;
   width: 7%;
 }
 
-#nav-imood p {
+#imood p {
   color: var(--sluggreen);
   text-align: center;
   font-size: 0.7rem;
 }
 
-#nav-imood img {
+#imood img {
   border: solid 1px var(--sluggreen-sh);
   margin: 5px 0 0 18px;
 }
 
-#nav-imood img:hover {
+#imood img:hover {
   border: solid 1px var(--sluggreen);
-  -webkit-animation-name: glow-blur;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-duration: 1s;
-  animation-name: glow-blur;
+  animation: glow-blur 1s linear infinite;
+  -moz-animation: glow-blur 1s linear infinite;
+  -webkit-animation: glow-blur 1s linear infinite;
 }
 
 #nav {
@@ -233,14 +228,9 @@ h1, h2, h3, h4 {
   color: rgba(255, 243, 110, 1);
   box-shadow: none;
   scale: 1.05;
-  -webkit-animation-name: glow;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-duration: 1s;
-  animation-name: glow;
+  animation: glow 1s linear infinite;
+  -moz-animation: glow 1s linear infinite;
+  -webkit-animation: glow 1s linear infinite;
 }
 
 #bt-home {
@@ -318,6 +308,8 @@ h1, h2, h3, h4 {
 .glow {
   z-index: 3;
   animation: glow 2.5s infinite;
+  -moz-animation: glow 2.5s infinite;
+  -webkit-animation: glow 2.5s infinite;
 }
 
 @keyframes glow {
@@ -337,6 +329,8 @@ h1, h2, h3, h4 {
   filter: invert(1) hue-rotate(40deg) invert(1) blur(4px);
   -webkit-filter: invert(1) hue-rotate(40deg) invert(1) blur(4px);
   animation: glow-blur 4.5s infinite;
+  -moz-animation: glow-blur 4.5s infinite;
+  -webkit-animation: glow-blur 4.5s infinite;
 }
 
 @keyframes glow-blur {
@@ -351,15 +345,49 @@ h1, h2, h3, h4 {
   }
 }
 
+#nav button:focus {
+  animation: glow-text 4s ease infinite;
+  -moz-animation: glow-text 4s ease infinite;
+  -webkit-animation: glow-text 4s ease infinite;
+}
+
+@keyframes glow-text {
+  0%,
+  100% {
+    text-shadow: 0 0 0.3vw rgba(203, 243, 41, 0.5), 0 0 0.6vw rgb(203, 243, 41, 0.5), 0 0 1vw rgb(203, 243, 41, 0.5), 0 0 1vw rgb(203, 243, 41, 0.4), 0 0 .4vw rgb(177, 251, 91, 0.65), 0 0 .1vw rgb(67, 119, 7,0.45);
+    color: rgb(203, 243, 41, 0.85);
+    border-color: rgb(90, 205, 185);
+  }
+  50% {
+    text-shadow: 0 0 .5vw rgba(85, 119, 7, 0.65), 0 0 0.25vw rgb(85, 119, 7, 0.6), 0 0 1vw rgb(85, 119, 7, 0.5), 0 0 1vw rgb(85, 119, 7, 0.75), 0 0 .2vw rgb(85, 119, 7, 0.75), 0 0 .1vw rgba(118, 160, 34, 0.7);
+    color: rgba(183, 230, 28, 0.8);
+    border-color: rgb(90, 205, 185, .9);
+  }
+}
+
 .holo {
-  opacity: 0.9;
+  opacity: 0.75;
+}
+
+.flicker {
+  animation: flicker 1.2s linear 1;
+  -moz-animation: flicker 1.2s linear 1;
+  -webkit-animation: flicker 1.2s linear 1;
+}
+
+@keyframes flicker {
+    0% {opacity: 0;}
+    5% { opacity: .1;}
+    15% { opacity: 0;}
+    20% { opacity: .4;}
+    25% { opacity: .2;}
+    30%, 100% { opacity: 1;}
 }
 
 .float {
-  animation-name: float;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  animation: float 3s ease-in-out infinite;
+  -moz-animation: float 3s ease-in-out infinite;
+  -webkit-animation: float 3s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -369,14 +397,9 @@ h1, h2, h3, h4 {
 }
 
 .shake {
-  -webkit-animation-name: shake;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-duration: 1s;
-  animation-name: shake;
+  animation: shake 1s linear infinite;
+  -moz-animation: shake 1s linear infinite;
+  -webkit-animation: shake 1s linear infinite;
 }
 
 @keyframes shake {
@@ -416,29 +439,43 @@ h1, h2, h3, h4 {
 }
 
 .spin {
-  animation: rotatey 6.5s linear infinite;
+  animation: rotateY 6.5s linear infinite;
+  -moz-animation: rotateY 6.5s linear infinite;
+  -webkit-animation: rotateY 6.5s linear infinite;
 }
 
-@keyframes rotatey {
+@keyframes rotateY {
   0% {
     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);  }
   100% {
-    transform: rotateX(0deg) rotateY(-360deg) rotateZ(0deg);
+    transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
   }
 }
 
-/* mobile stuff */
+/* mobile stuff - not done yet */
 @media (max-width: 600px) {
   .border-left, .border-right {
     display: none;
   }
+  #nav {
+    display:flex;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+  #wrapper {
+    width: 100vw;
+    height: 100vh;
+  }
   .container {
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "footer footer footer"; 
+    padding: 0;
+    margin: 0;
   }
   .main {
     width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .mobile-hide {
+    display: none;
   }
 }

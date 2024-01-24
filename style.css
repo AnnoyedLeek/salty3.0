@@ -319,6 +319,14 @@ a:hover, button:hover {
 }
 
 /* animations */
+.funky {
+  animation: float 2s ease-in-out infinite;
+  -moz-animation: float 2s ease-in-out infinite;
+  -webkit-animation: float 2s ease-in-out infinite;
+  position: relative;
+  opacity: 0.85;
+  top: 30.5%;
+}
 .glow {
   z-index: 3;
   animation: glow 2.5s infinite;

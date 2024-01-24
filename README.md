@@ -3,6 +3,8 @@ New and improved! (again)
 
 ## **To-Do:**
 - !! Add an index page with sitemap and zoom/non-responsive warning.
+- ~~Finish placing interface within grid area and position all header elements.~~
+- Finalize landing page content.
 - Move old pages to new format:
   1. About
   2. Art
@@ -35,7 +37,7 @@ New and improved! (again)
     > melonland deed
 - Address any bugs with hi-res displays.
 - Design a mobile-friendly version of the site.
-- Redo 404 page to reflect new aesthetics.
+- ~~Redo 404 page.~~
 - Figure out how to change the tab title when switching frames from the nav.
 - Translate "About" stat sheet to new design with modal pop up.
 - ~~Illustrate a new guestbook icon. :0~~

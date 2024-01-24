@@ -18,6 +18,7 @@
   --sluggreen-sh: rgb(137, 173, 18);
   --slugblack: rgb(55, 55, 55);
   --slugblue: rgb(90, 205, 185);
+  --slugblue-sh: rgb(222, 123, 239);
   --slugyellow: rgb(254, 243, 122);
   --slugyellow-sh: rgb(168, 159, 57);
   --sluggrey: rgb(118, 118, 118);
@@ -324,9 +325,21 @@ a:hover, button:hover {
   -moz-animation: float 2s ease-in-out infinite;
   -webkit-animation: float 2s ease-in-out infinite;
   position: relative;
-  opacity: 0.85;
   top: 30.5%;
+  left: 6.45%;
 }
+
+.funky-blur {
+  animation: float 2s ease-in-out infinite;
+  -moz-animation: float 2s ease-in-out infinite;
+  -webkit-animation: float 2s ease-in-out infinite;
+  position: relative;
+  opacity: 0.85;
+  top: 19%;
+  left: 6.45%;
+
+}
+
 .glow {
   z-index: 3;
   animation: glow 2.5s infinite;
@@ -389,17 +402,6 @@ a:hover, button:hover {
     color: rgba(183, 230, 28, 0.8);
     border-color: rgb(90, 205, 185, .85);
   }
-}
-
-@keyframes glow-header {
-  0%,
-  100% {
-    text-shadow: 0 0 0.3vw rgb(254, 243, 122, 0.4), 0 0 0.6vw rgb(254, 243, 122, 0.2), 0 0 1vw rgba(216, 205, 78, 0.4), 0 0 1vw rgb(254, 243, 122, 0.25), 0 0 .4vw rgba(255, 246, 150, 0.5), 0 0 .1vw rgba(155, 146, 46, 0.35);
-    color: rgb(254, 243, 122, 0.85);
-  }
-  50% {
-    text-shadow: 0 0 .5vw rgba(168, 159, 57, 0.65), 0 0 0.25vw rgb(168, 159, 57, 0.6), 0 0 1vw rgb(168, 159, 57, 0.5), 0 0 1vw rgb(168, 159, 57, 0.75), 0 0 .2vw rgb(168, 159, 57, 0.7), 0 0 .1vw rgba(149, 160, 34, 0.6);
-    color: rgba(225, 216, 122, 0.9);  }
 }
 
 .holo {

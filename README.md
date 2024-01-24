@@ -4,7 +4,7 @@ New and improved! (again)
 ## **To-Do:**
 - !! Add an index page with sitemap and zoom/non-responsive warning.
 - ~~Finish placing interface within grid area and position all header elements.~~
-- Finalize landing page content.
+- ~~Finalize landing page content.~~
 - Move old pages to new format:
   1. About
   2. Art
@@ -26,7 +26,8 @@ New and improved! (again)
   5. Wife Page
   6. 4/20 page (figure out new spot?)
   7. tech stuff
-- Figure out where to put guestbook (on landing?)
+- ~~Figure out where to put guestbook (on landing?)~~
+- Redo the guestbook page (on 123guestbook.com) >> after go live
 - Link to Neocities profile somewhere.
 - Make new pages
   * Blog

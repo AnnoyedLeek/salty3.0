@@ -1,0 +1,44 @@
+WINDOWS PC
+
+OS: Windows 11 Pro
+
+Hardware
+======
+MOBO: MSI MPG Z390 Gaming Edge AC  - 8GB GDDR6
+GPU: MSI RTX 2070 DUKE OC - Z390 CHIPSET
+CPU: Intel Core i7-9700k - 3.6GHz base speed
+RAM: Corsair 32GB DDR4 3600MHz 
+
+Shell
+===
+PowerShell 7
+	~ PACKAGES 
+	* PackageManagement (Winget)
+	* Vim & Nano
+	* Chocolatey
+	* Scoop
+	
+	~ PROMPT
+	* Starship 
+		https://starship.rs/
+Essentials
+======
+PowerToys - https://github.com/microsoft/PowerToys
+ShareX - https://getsharex.com/
+Notion - https://www.notion.so/
+PureRef - https://www.pureref.com/
+7zip - https://www.7-zip.org/
+Windirstat - https://windirstat.net/
+IrfanView - https://www.irfanview.com/
+Notepads - https://github.com/0x7c13/Notepads
+
+Torrenting/Rips
+==========
+Qbittorrent - https://www.qbittorrent.org/
+yt-dlp - https://github.com/yt-dlp/yt-dlp
+
+WebDev
+======
+VSCodium - https://github.com/VSCodium/vscodium
+	This is just VScode reskinned without Microsoft Branding and minus the telemetry.
+Github Desktop - https://desktop.github.com/

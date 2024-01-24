@@ -1,0 +1,42 @@
++------------------+
+|   SITE CREDITS   |
++------------------+
+
+WEB TOOLS
+========
+font conversion (ttf to woff/woff2) - https://cloudconvert.com/
+for emoji copying - https://www.emojicopy.com/
+also more emoji/symbol stuff - https://fsymbols.com/
+optimizing and resizing images - https://ezgif.com/
+youtube link to gif - https://gifrun.com/
+css "beautify" - https://www.cleancss.com/css-beautify/
+js/css minifier - https://www.websiteplanet.com/webtools/jscssminifier/
+responsive checker - https://www.websiteplanet.com/webtools/responsive-checker/
+site performance checker - https://gtmetrix.com/
+remove unused css - https://purifycss.online/
+dither images - https://ditherit.com/
+color palettes - https://lospec.com/
+
+EMBEDDABLES
+==========
+scm music player - https://www.scmplayer.net/
+
+
+RESOURCES
+========
+tiled backgrounds - https://eggnored.tumblr.com/pattern
+animated pixel backgrounds - https://eggnored.tumblr.com/animated
+gifs, highly recommend using a california-based vpn to use gifcities or you'll spend half your life waiting for it to load. - https://gifcities.org/
+free animations, clipart, gifs - https://www.fg-a.com/
+internet bumper stickers - https://www.internetbumperstickers.com/admonitions/
+cat graphics - https://user.xmission.com/~emailbox/graphics.htm
+cottage row - https://web.archive.org/web/20041204031953/http://www.cottagegroup.com/cottagerow/index.html
+no hotlinking allowed - https://jansgraphics.com/
+bonnibel - https://graphic.neocities.org/directory
+enchanting castle - http://www.enchantingcastle.com/gifs_&_pixel_art.htm
+graphic gard - https://web.archive.org/web/20030412180906/http://graphicgard.topcities.com/PageSets.html
+betty's graphics - https://bettysgraphics.neocities.org/
+bannerzrusgraphics.com
+we live in a new economic order that claims human experience as free raw material for hidden commercial practices of extraction, prediction, and sales.
+professor shoshanna zuboff
+

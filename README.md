@@ -5,6 +5,7 @@ New and improved! (again)
 - !! Add an index page with sitemap and zoom/non-responsive warning.
 - ~~Finish placing interface within grid area and position all header elements.~~
 - ~~Finalize landing page content.~~
+- fix weird vent on iPad drawing and also write "uplink established"
 - Move old pages to new format:
   1. About
   2. Art
@@ -35,6 +36,15 @@ New and improved! (again)
   * Misc.
     > Badges
     > site credits
+    > site updates
+    Layout:
+    <article class="site-updates">
+      <section class="update">
+        <h3>Date</h3>
+        <p>Synopsis with links.</p>
+      </section>
+    </article>
+      * Add site update link to the landing.
     > melonland deed
 - Address any bugs with hi-res displays.
 - Design a mobile-friendly version of the site.

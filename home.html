@@ -3,7 +3,7 @@
   <head>
     <meta charset='UTF-8'>
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <title>Salty's Lair 3.0 - Home</title>
+    <title>Salty's Lair 3.0 | Index</title>
     <link rel="icon" type="image/x-icon" href="/fav/favicon.ico">
     <link href='/style.css' rel='stylesheet' type='text/css' media='all'>
     <link rel="apple-touch-icon" sizes="57x57" href="/fav/apple-icon-57x57.png">
@@ -26,23 +26,26 @@
   </head>
   <body>
     <div id="wrapper">
+      <!-- Interface .png Overlay-->
+      <div class="container-interface mobile-hide">
+        <img src="img/interface.png">
+      </div>
+      <!-- Frame Container -->
       <div class="container">
         <div class="header">
-          <div class="nav-logo mobile-hide">
-            <img src="img/logo-dark.svg" class="holo rotateY" alt="A green and blue futuristic object that contains the words 'Slug Three Point Zero'">
-          </div>
-          <div class="nav-logo-under mobile-hide">
-            <img src="img/logo.svg" class="holo glow-blur rotateY">
-          </div>
-          <div id="imood" class="glow mobile-hide">
+          <!-- Spinning Slug 3.0 Logo-->
+          <img src="img/logo-dark.svg" class="rotateY nav-logo" alt="A green and blue futuristic object that contains the words 'Slug Three Point Zero'">
+          <!-- iMood embed -->
+          <div class="imood glow mobile-hide">
             <p>
               Salty's current mood is...
             </p>
             <a href="https://www.imood.com/users/saltedslug">
-              <img src="https://moods.imood.com/display/uname-saltedslug/fg-b4eb00/bg-373737/imood.gif" alt="The current mood of saltedslug at www.imood.com" border="0">
+              <img src="https://moods.imood.com/display/uname-saltedslug/fg-b4eb00/bg-373737/imood.gif" alt="The current mood of saltedslug at www.imood.com" border="0" class="center">
             </a>
           </div>
-          <div id="nav" class="glow">
+          <!-- Nav Button Grid -->
+          <div id="nav">
             <a href="landing.html" target="frame">
               <button id="bt-home" class="glow-text">INDEX</button>
             </a>
@@ -71,26 +74,25 @@
               <button id="bt-misc">MISC.</button>
             </a>
           </div>
-          <div class="artifacts">
-            <img src="img/artifacts.svg" class="holo" alt="A cartoon image of a slug coming out of a barrel full of green sludge. He is being salted by a salt shaker.">
-          </div>
-          <div class="artifacts-under mobile-hide">
-            <img src="img/artifacts.svg" class="glow-blur">
+          <!-- Slug & Barrel-->
+          <div class="artifact-container mobile-hide">
+            <img src="img/artifacts.svg" class="artifact" alt="A cartoon image of a slug coming out of a barrel full of green sludge. He is being salted by a salt shaker.">
           </div>
         </div>
-        <div class="border-left">
-        </div>
+        <div class="border-left"></div>
+        <!-- Frame Container -->
         <div class="main">
           <iframe name="frame" src="/landing.html" frameborder="0"></iframe>
         </div>
+        <!-- UB Funkey Business -->
         <div class="border-right">
-          <img src="img/ubfunky.png" class="funky">
-          <div class="funky-blur">
-            <img src="img/ubfunky.png" class="glow-blur">
+          <div class="funky">
+            <a href="/420.html" target="frame">
+              <img src="img/ubfunky.png" class="funky">
+            </a>
           </div>
         </div>
-        <div class="footer">
-        </div>
+        <div class="footer"></div>
       </div>
     </div>
   </body>

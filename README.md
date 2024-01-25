@@ -5,6 +5,7 @@ New and improved! (again)
 - !! Add an index page with sitemap and zoom/non-responsive warning.
 - ~~Finish placing interface within grid area and position all header elements.~~
 - ~~Finalize landing page content.~~
+- ~~Finish site updates mini-section on landing page.~~
 - fix weird vent on iPad drawing and also write "uplink established"
 - Move old pages to new format:
   1. About
@@ -21,29 +22,28 @@ New and improved! (again)
   4. ~~Shrines~~
     * ~~move wife page to shrines page~~
     * ~~add new shrine idea - 60s music~~
-5. Wife Page
-6. 4/20 page (figure out new spot?)
-7. tech stuff
+  5. Wife Page
+  6. 4/20 page (figure out new spot?)
+  7. tech stuff
 - ~~Figure out where to put guestbook (on landing?)~~
 - Redo the guestbook page (on 123guestbook.com) >> after go live
 - Link to Neocities profile somewhere.
 - Make new pages
-  * Blog
-  * GFX
-  * Misc.
+  1. Blog
+  2. GFX
+  3. Misc.
     > Badges
     > site credits
     > site updates
-    Layout:
-    <article class="site-updates">
-      <section class="update">
-        <h3>Date</h3>
-        <p>Synopsis with links.</p>
-      </section>
-    </article>
-    <li>💽 A gallery of my favorite editions of discs from my CD collection.</li>
-      ~~* Add site update link to the landing.~~
-    > melonland deed
+    > Layout:
+      <article class="site-updates">
+        <section class="update">
+          <h3>Date</h3>
+          <p>Synopsis with links.</p>
+        </section>
+      </article>
+- ~~Add site update link to the landing.~~
+- put my melonland deed somewhere
 - Address any bugs with hi-res displays.
 - Design a mobile-friendly version of the site.
 - ~~Redo 404 page.~~

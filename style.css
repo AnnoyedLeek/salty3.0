@@ -163,6 +163,11 @@ a:hover, button:hover {
   opacity: 0.75;
 }
 
+.nav-logo:hover {
+  animation: shake 1s linear infinite;
+  -moz-animation: shake 1s linear infinite;
+}
+
 .imood {
   display: flex;
   flex-wrap: wrap;
@@ -170,26 +175,26 @@ a:hover, button:hover {
   align-content: center;
   justify-content: center;
   position: relative;
-  top: 42.25%;
-  left: 13.5%;
+  top: 44%;
+  left: 14.15%;
   right: 0;
   bottom: 0;
-  width: 8.25%;
+  width: 7%;
   height: 30%;
-  overflow: scroll;
 }
 
 .imood p {
   color: var(--sluggreen);
   text-align: center;
   font-size: 0.7rem;
-  width: 100%;
 }
 
 .imood img {
   border: solid 1px var(--sluggreen-sh);
-  margin: 5px auto;
-  width: 100%;
+  max-width: auto;
+  animation: glow 2.5s linear infinite;
+  -moz-animation:  glow 2.5s linear infinite;
+  -webkit-animation:  glow 2.5s linear infinite;
 }
 
 .imood img:hover {
@@ -221,7 +226,7 @@ a:hover, button:hover {
   z-index: 5;
   display: grid;
   position: relative;
-  top: -29.35%; left: 23%; right: 0; bottom: 0;
+  top: -30%; left: 23%; right: 0; bottom: 0;
   width: 115%;
   height: 110%;
   grid-template-columns: 6.5% 6.5% 6.5%; 
@@ -242,17 +247,20 @@ a:hover, button:hover {
 }
 
 #nav button {
-  padding-top: 2px;
-  margin: 0;
-  align-self: center;
-  font-family: 'awful';
-  font-size: 1.3rem;
-  background-color: rgb(0, 0, 0, 0);
-  color: rgba(213, 242, 50, 0.7);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: '04b', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+  font-size: 1.25rem;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(213, 242, 50, 0.65);
   z-index: 5;
   width: 100%;
+  max-width: 100%;
   height: 100%;
-  border: outset 3px rgba(194, 255, 63, 0.5);
+  max-height: 100%;
+  border: groove 2px rgba(194, 255, 63, 0.5);
   border-radius: 3px;
   animation: glow-btn 3s ease-in-out infinite;
   -moz-animation: glow-btn 3s ease-in-out infinite;
@@ -263,7 +271,7 @@ a:hover, button:hover {
   border-color: rgba(86, 252, 224, 0.7);
   border-style: groove;
   color: rgba(230, 251, 111, 0.95);
-  box-shadow: 0 0 15px 5px rgba(90, 255, 252, 0.8);
+  box-shadow: 0 0 15px 5px rgba(90, 255, 252, 0.65);
   animation: none;
   -webkit-animation: none;
   -moz-animation: none;
@@ -328,13 +336,7 @@ a:hover, button:hover {
   width: 100%;
 }
 
-/* positions */
-.center {
-  display: block;
-  margin: auto;
-  width: 50%;
-}
-
+/* translations */
 .mirror {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -363,7 +365,7 @@ a:hover, button:hover {
   100% {
     color: rgba(213, 242, 50, 0.7);
     box-shadow: 1px 1px 10px 1px rgba(222, 247, 113, 0.15);
-    border-color: rgba(194, 255, 63, 0.6);
+    border-color: rgba(194, 255, 63, 0.5);
   }
   50% {
     color: rgba(213, 242, 50, 0.9);
@@ -376,20 +378,20 @@ a:hover, button:hover {
   0%,
   100% {
     text-shadow: 0 0 0.3vw rgba(203, 243, 41, 0.5), 0 0 0.6vw rgb(203, 243, 41, 0.2), 0 0 1vw rgb(203, 243, 41, 0.5), 0 0 1vw rgb(203, 243, 41, 0.4), 0 0 .4vw rgb(177, 251, 91, 0.65), 0 0 .1vw rgb(67, 119, 7,0.4);
-    color: rgb(203, 243, 41, 0.85);
+    color: rgb(203, 243, 41, 0.8);
     border-color: rgb(97, 232, 209);
   }
   50% {
     text-shadow: 0 0 .5vw rgba(85, 119, 7, 0.65), 0 0 0.25vw rgb(85, 119, 7, 0.6), 0 0 1vw rgb(85, 119, 7, 0.5), 0 0 1vw rgb(85, 119, 7, 0.75), 0 0 .2vw rgb(85, 119, 7, 0.7), 0 0 .1vw rgba(118, 160, 34, 0.6);
-    color: rgba(183, 230, 28, 0.8);
+    color: rgba(183, 230, 28, 0.75);
     border-color: rgb(90, 205, 185, .85);
   }
 }
 
 .flicker {
-  animation: flicker 1.2s linear 1;
-  -moz-animation: flicker 1.2s linear 1;
-  -webkit-animation: flicker 1.2s linear 1;
+  animation: flicker 1.4 linear 1;
+  -moz-animation: flicker 1.4s linear 1;
+  -webkit-animation: flicker 1.4s linear 1;
 }
 
 @keyframes flicker {
@@ -416,9 +418,9 @@ a:hover, button:hover {
 }
 
 .rotateY {
-  animation: rotateY 8.5s linear infinite;
-  -moz-animation: rotateY 8.5s linear infinite;
-  -webkit-animation: rotateY 8.5s linear infinite;
+  animation: rotateY 8s linear infinite;
+  -moz-animation: rotateY 8s linear infinite;
+  -webkit-animation: rotateY 8s linear infinite;
 }
 
 @keyframes rotateY {
@@ -427,6 +429,53 @@ a:hover, button:hover {
   100% {
     transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
   }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(2px, 1px) rotate(0deg);
+    -webkit-transform: translate(2px, 1px) rotate(0deg);
+ }
+  10% {
+    transform: translate(-1px, -2px) rotate(0deg);
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+ }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+ }
+  30% {
+    transform: translate(0px, 2px) rotate(0deg);
+    -webkit-transform: translate(0px, 2px) rotate(0deg);
+ }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+ }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+ }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+ }
+  70% {
+    transform: translate(2px, 1px) rotate(-1deg);
+    -webkit-transform: translate(2px, 1px) rotate(-1deg);
+ }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+ }
+  90% {
+    transform: translate(2px, 2px) rotate(0deg);
+  -webkit-transform: translate(2px, 2px) rotate(0deg);
+ }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+ }
 }
 
 /* mobile stuff - not done yet */

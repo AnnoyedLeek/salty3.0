@@ -13,12 +13,15 @@ body::before {
   opacity: .075;
   pointer-events: none;
 }
+body {
+  font-size: 1rem;
+}
 
+/* All the stuff  ya see */
 .frame-main {
   width: 100%;
   padding: 0;
 }
-
 .frame-content {
   background-color: var(--slugblack);
   padding: 44px 42px 22px 45px;
@@ -26,24 +29,24 @@ body::before {
   max-width: 100vw;
   min-height: 100vh;
 }
-
+.frame-content b {
+  color: var(--sluggreen);
+}
 .frame-content a {
   font-family: 'sh-pinscher', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-decoration: none;
   color: var(--slugblue);
-  animation: glow-link 5s infinite;
-  -moz-animation: glow-link 5s  infinite;
-  -webkit-animation: glow-link 5s infinite;
+  animation: glow-text-blue 3s infinite;
+  -moz-animation: glow-text-blue 3s  infinite;
+  -webkit-animation: glow-text-blue 3s infinite;
 }
-
 .frame-content a:hover {
   color: var(--sluggreen);
   animation: none;
   -moz-animation: none;
   -webkit-animation: none;
 }
-
-.frame-content h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: '04b', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: var(--slugyellow);
   text-shadow: var(--slugyellow-sh) 2px 2px;
@@ -53,25 +56,20 @@ body::before {
   padding: 0;
   margin: 0;
 }
-
 .frame-content h1 {
   font-size: 2.25rem;
-  margin-top: 2px;
+  margin-top: 0.5%;
 }
-
 .frame-content h2 {
   font-size: 2rem;
   margin-bottom: 5px;
 }
-
 .frame-content h3 {
   font-size: 1.75rem;
 }
-
-.frame-content h4, h5, h6 {
+.frame-content h4, .frame-content h5, .frame-content h6 {
   font-size: 1.5rem;
 }
-
 .frame-content hr {
   border: outset 2px var(--slugyellow);
   animation: glow-hr 2.5s ease-in-out infinite;
@@ -79,8 +77,7 @@ body::before {
   opacity: .75;
   margin: 10px 0;
 }
-
-.frame-content p, article, section {
+.frame-content p, .frame-content article, .frame-content section {
   font-family: 'sh-pinscher', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: var(--slugyellow);
   font-size: 1.2rem;
@@ -91,8 +88,7 @@ body::before {
   -moz-animation: glow-p 3s  infinite;
   -webkit-animation: glow-p 3s infinite;
 }
-
-.frame-content ul, li {
+.frame-content ul, .frame-content li {
   list-style-type: none;
   font-family: 'sh-pinscher', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: var(--slugyellow);
@@ -103,100 +99,105 @@ body::before {
   -moz-animation: glow-p 3s  infinite;
   -webkit-animation: glow-p 3s infinite;
 }
-
-.frame-content a.big {
-  font-size: 2rem;
+/* for big lists */
+.frame-big-list > .flex-nowrap h4 > a {
+  font-family: '04b', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.5rem;
+}
+.frame-big-list > .flex-nowrap h4 {
+  width: 22%;
+}
+.frame-big-list p {
+  width: 75%;
+  text-align: justify;
 }
 
  /* Text Alignment */
 .center-text {
   text-align: center;
 }
-
 .justify-text {
   text-align: justify;
 }
-
 .right-align-text {
   text-align: right;
 }
 
+/* Made this class for the "this page last updated" since I use it on every page */
 .last-update p {
   text-align: center;
   font-size: 1rem;
   color: var(--slugyellow-sh);
 }
 
-/* Flexin' - I am not really sure if this is the best method, but it's what works best for my HTML workflow. I combine the different classes for different DIVs depending on their intended function/appearance. For me, this is far less headache than making special flex item classes for every single little thing. */
+/* Flexin' - I am not really sure if this is the best method, but it's what works best for my HTML workflow. I combine the different classes for different DIVs depending on their intended function/appearance. For me, this is far less headache than making esoteric flex item classes for every single little thing. */
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;
 }
-
 .flex-wrap hr, .flex-wrap-update hr {
   width: 100%;
 }
-
 .flex-wrap-update {
   display: flex;
   flex-flow: column;
 }
-
-.flex-even-vert {
-  align-content: space-evenly;
-}
-
-.flex-around-hz {
-  justify-content: space-around;
-}
-
 .flex-even-hz {
   justify-content: space-evenly;
 }
-
+.flex-even-vert {
+  align-content: space-evenly;
+}
+.flex-around-hz {
+  justify-content: space-around;
+}
+.flex-even-hz {
+  justify-content: space-evenly;
+}
 .flex-btw-hz {
   justify-content: space-between;
 }
-
+.flex-start-vert {
+  align-content: flex-start;
+}
 .flex-center-vert {
   align-content: center;
   align-items: center;
 }
-
 .flex-center-hz {
   justify-content: center;
   justify-items: center;
 }
-
+.flex-end-vert {
+  align-content: flex-end;
+  align-items: flex-end;
+}
 .flex-row {
   flex-direction: row;
 }
-
 .flex-col {
   flex-direction: column;
 }
-
 .flex-nowrap {
   display: flex;
   flex-wrap: nowrap;
 }
-
 .flex-nowrap img {
   max-width: 100%;
 }
-
 .flex-nowrap img.left {
   margin: 5px 15px 5px 0px;
 }
-
 .flex-nowrap img.right {
   margin: 5px 0px 5px 10px;
 }
-
 .flex-wrap, .flex-nowrap {
   padding: 0;
   margin: 0;
   justify-self: stretch;
+}
+.flex-pad {
+  padding: 0.5% 0;
 }
 
 /* flex items */
@@ -206,7 +207,6 @@ body::before {
   margin-right: 10px;
   align-self: flex-start;
 }
-
 .flex-update-p {
   order: 2;
   width: 100%;
@@ -226,7 +226,6 @@ body::before {
     color: rgba(225, 216, 122, 0.9);
   }
 }
-
 @keyframes glow-hr {
   0%,
   100% {
@@ -236,7 +235,6 @@ body::before {
     box-shadow: 0 0 10px 1px rgba(254, 243, 122, 0.5);
   }
 }
-
 @keyframes glow-link {
   0%,
   100% {
@@ -247,7 +245,6 @@ body::before {
     color: rgba(90, 205, 185, 0.9);
   }
 }
-
 @keyframes glow-p {
   0%,
   100% {
@@ -258,7 +255,6 @@ body::before {
     color: rgba(254, 243, 122, 0.9);
   }
 }
-
 @keyframes glow-text {
   0%,
   100% {
@@ -272,7 +268,17 @@ body::before {
     border-color: rgb(90, 205, 185, .85);
   }
 }
-
+@keyframes glow-text-blue {
+  0%,
+  100% {
+    text-shadow: 0 0 0.3vw rgba(41, 243, 219, 0.5), 0 0 0.6vw rgb(41, 243, 219, 0.2), 0 0 1vw rgb(41, 243, 219, 0.5), 0 0 1vw rgb(41, 243, 219, 0.4), 0 0 .4vw rgba(91, 240, 251, 0.65), 0 0 .1vw rgba(7, 119, 113, 0.4);
+    color: rgb(97, 232, 209, 0.8);
+  }
+  50% {
+    text-shadow: 0 0 .5vw rgba(7, 119, 100, 0.65), 0 0 0.25vw rgba(7, 119, 100, 0.6), 0 0 1vw rgba(7, 119, 108, 0.5), 0 0 1vw rgba(7, 119, 119, 0.75), 0 0 .2vw rgba(7, 119, 100, 0.7), 0 0 .1vw rgba(34, 160, 147, 0.6);
+    color: rgba(97, 232, 209, 0.75);
+  }
+}
 @keyframes phase {
   0%, 
   100% {

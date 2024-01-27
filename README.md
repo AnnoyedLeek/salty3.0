@@ -9,7 +9,7 @@ New and improved! (again)
 - fix weird vent on iPad drawing and also write "uplink established", also stretch navigation out and change its color to purple and green
 - Move old pages to new format:
   1. About
-  2. Art
+  2. ~~Art~~
     - gifcollage
     - collage (digital and analog)
     - webart
@@ -32,7 +32,7 @@ New and improved! (again)
   1. Blog
   2. GFX
   3. Misc.
-    > Badges
+    > ~~Badges~~
     > site credits
     > site updates
     > Layout:

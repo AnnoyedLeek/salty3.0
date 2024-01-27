@@ -140,7 +140,7 @@ a:hover, button:hover {
 /* NAV BOX - This one holds all the cool stuff sitting inside the "Navigation" area. It technically lives outside the grid 'Header' area due to the way I drew the frame asset. */
 .nav-container {
   position: relative;
-  top: 34%; left: 13%; right: 0; bottom: 0;
+  top: 34.5%; left: 13%; right: 0; bottom: 0;
   width: 62%;
   height: 75%;
   display: grid;

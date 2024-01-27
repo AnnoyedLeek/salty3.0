@@ -3,14 +3,12 @@
 /* Declare fonts */
 @font-face {
   font-family: '04b';
-  src: url('fonts/04b_08.woff');
+  src: url('fonts/04b_08.woff'), url('fonts/04b_08.woff2');
 }
-
 @font-face {
   font-family: 'awful';
   src: url('fonts/awfullydigital.woff'), url('fonts/awfullydigital.woff2');
 }
-
 @font-face {
   font-family: 'sh-pinscher';
   src: url('fonts/sh-pinscher.woff'), url('fonts/sh-pinscher.woff2');
@@ -25,26 +23,18 @@
   --slugblue-sh: rgb(222, 123, 239);
   --slugyellow: rgb(254, 243, 122);
   --slugyellow-sh: rgb(189, 179, 59);
-  --sluggrey: rgb(118, 118, 118);
-  --slugwhite: rgb(242, 242, 242);
-  --slugtan: rgb(168, 153, 132);
 }
 
 /* CSS reset */
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* Hide scrollbar in all browsers. */
 * {
+  box-sizing: border-box;
+  /* Hide scrollbar in all browsers. */
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-	}
-
-::-webkit-scrollbar {
-  display: none;
+}
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
 }
 
 /* HTML reset - to make sure no weird margins/padding throws the rest of this sheet off. */
@@ -57,7 +47,7 @@ html, body{
   height: 100vh;
 }
 
-/* Body styling - background and cursor */
+/* Body styling - background image, font setting, and cursor */
 body {
   background-image: url(img/bg.png);
   background-size: 100vw;
@@ -67,18 +57,17 @@ body {
   cursor: url('img/biohazard-red.cur'), auto;
 }
 
+ /* This changes the cursor color when you hover over a link. */
+a:hover, button:hover {
+  cursor: url('img/biohazard-green.cur'), auto;
+}
+
 /* This wrapper holds the main container and makes sure it doesn't zoom off the screen */
 #wrapper {
   display: flex;
   flex-flow: nowrap;
-  align-content: center;
   height: 100vh;
-  max-width: 100vw;
-}
-
- /* This changes the cursor color when you hover over a link. */
-a:hover, button:hover {
-  cursor: url('img/biohazard-green.cur'), auto;
+  width: 100vw;
 }
 
 /* This container holds the cartoony frame of the website. It's purely decorative, so it doesn't need to have any functionality. The 'pointer-events' part is very important! */
@@ -115,97 +104,177 @@ a:hover, button:hover {
   margin: auto;
 }
 
+/* This makes sure all the different grid classes are always using the fully allocated grid area for each spot. */
 .header, .border-left, .border-right, .footer {
   z-index: 3;
   width: 100%;
   height: 100%;
 }
 
+/* The next few things just declare what class goes in what spot on the grid. */
 .header {
   grid-area: header;
 }
-
 .border-left {
   grid-area: border-left;
 }
-
 .main {
   grid-area: main; 
-  z-index: 0;
   overflow-y: scroll;
 }
-
 .main iframe {
   width: 100%;
   height: 100%;
   z-index: 0;
 }
-
 .main, .main iframe {
   border-radius: 25px;
 }
-
 .border-right {
   grid-area: border-right;
 }
-
 .footer {
   grid-area: footer;
 }
 
-/* Header Contents */
-.header > * {
-  padding: 0; margin: 0;
-}
-
-.nav-logo {
+/* NAV BOX - This one holds all the cool stuff sitting inside the "Navigation" area. It technically lives outside the grid 'Header' area due to the way I drew the frame asset. */
+.nav-container {
   position: relative;
-  top: 35.5%;
-  left: 13.5%;
-  right: 0;
-  bottom: 0;
-  width: 8.25%;
-  opacity: 0.75;
+  top: 34%; left: 13%; right: 0; bottom: 0;
+  width: 62%;
+  height: 75%;
+  display: grid;
+  grid-template-columns: minmax(0, 15%) minmax(0, 50%) minmax(0, 35%); 
+  grid-template-rows: minmax(0, 100%); 
+  gap: 0px 0px;
+  grid-template-areas: 
+    "nav-side nav-buttons nav-slug";
+  align-self: stretch;
+  justify-self: stretch;
+  z-index: 5;
 }
-
-.nav-logo:hover {
-  animation: shake 1s linear infinite;
-  -moz-animation: shake 1s linear infinite;
+/* Side area in nav with logo & moodlet */
+.nav-side {
+  grid-area: nav-side; 
+  display: grid; 
+  grid-template-columns: minmax(0,100%); 
+  grid-template-rows: 70% 30%; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "nav-side-logo"
+    "nav-side-imood"; 
+  justify-self: stretch; 
+  align-self: stretch; 
 }
-
-.imood {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-  position: relative;
-  top: 44%;
-  left: 14.15%;
-  right: 0;
-  bottom: 0;
-  width: 7%;
-  height: 30%;
+.nav-side-logo {
+  justify-self: stretch; 
+  align-self: center; 
+  grid-area: nav-side-logo; 
+  padding: 0 10px;
 }
-
-.imood p {
-  color: var(--sluggreen);
+.nav-side-logo img {
+  width: 100%;
+  opacity: 0.9;
+}
+.nav-side-logo img:hover {
+  animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+}
+.nav-side-imood {
+  justify-self: stretch; 
+  align-self: flex-start;
+  grid-area: nav-side-imood;
   text-align: center;
-  font-size: 0.7rem;
-}
-
-.imood img {
-  border: solid 1px var(--sluggreen-sh);
+  font-size: .7rem;
+  color: var(--sluggreen);
   animation: glow 2.5s linear infinite;
   -moz-animation:  glow 2.5s linear infinite;
   -webkit-animation:  glow 2.5s linear infinite;
 }
-
-.imood img:hover {
-  border: solid 1px var(--sluggreen);
+.nav-side-imood img {
+  border: solid 1px var(--sluggreen-sh);
+}
+.nav-side-imood img:hover {
   animation: glow-btn 1s linear infinite;
   -moz-animation: glow-btn 1s linear infinite;
   -webkit-animation: glow-btn 1s linear infinite;
+}
+/* Grids inside of grids woo. I'm not gonna lie, making this nav setup was a royal pain in the ass.*/
+.nav-buttons {
+  grid-area: nav-buttons;
+  display: grid; 
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr); 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: .5rem .5rem; 
+  grid-template-areas: 
+    "nav-btn-home nav-btn-about nav-btn-art"
+    "nav-btn-blog nav-btn-gfx nav-btn-links"
+    "nav-btn-shrine nav-btn-tech nav-btn-misc"; 
+  align-self: center;
+  justify-self: stretch;
+  width: 95%;
+}
+.nav-buttons a {
+  text-decoration: none;
+}
+.nav-buttons button {
+  font-family: '04b', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(213, 242, 50, 0.65);
+  border: groove 2px rgba(194, 255, 63, 0.5);
+  border-radius: 3px;
+  padding: 5px 0;
+  margin: 0;
+  animation: glow-btn 3s ease-in-out infinite;
+  -moz-animation: glow-btn 3s ease-in-out infinite;
+  -webkit-animation: glow-btn 3s ease-in-out infinite;
+}
+.nav-buttons button:hover {
+  border-color: rgba(86, 252, 224, 0.7);
+  border-style: groove;
+  color: rgba(230, 251, 111, 0.95);
+  box-shadow: 0 0 15px 5px rgba(90, 255, 252, 0.65);
+  animation: none;
+  -webkit-animation: none;
+  -moz-animation: none;
+  scale: 1.05;
+}
+.nav-buttons button:focus {
+  animation: glow-text 3s ease-in-out infinite;
+  -moz-animation: glow-text 3s ease-in-out infinite;
+  -webkit-animation: glow-text 3s ease-in-out infinite;
+  box-shadow: 0 0 15px 5px rgba(90, 255, 252, 0.55);
+}
+.nav-btn-home {grid-area: nav-btn-home;}
+.nav-btn-about {grid-area: nav-btn-about;}
+.nav-btn-art {grid-area: nav-btn-art;}
+.nav-btn-blog {grid-area: nav-btn-blog;}
+.nav-btn-gfx {grid-area: nav-btn-gfx;}
+.nav-btn-link {grid-area: nav-btn-links;}
+.nav-btn-shrine {grid-area: nav-btn-shrine;}
+.nav-btn-tech {grid-area: nav-btn-tech;}
+.nav-btn-misc {grid-area: nav-btn-misc;}
+/* This little bit makes all the buttons stretch to fit their little grid spots */
+.nav-buttons div > a > button {
+  justify-self: stretch;
+  align-self: stretch;
+  width: 100%;
+}
+/* Slug image grid spot */
+.nav-slug {
+  justify-self: stretch; 
+  align-self: stretch;
+  grid-area: nav-slug; 
+  width: 100%;
+  height: 100%;
+}
+.nav-slug img {
+  opacity: .8;
+  height: 100%;
+  float:right;
+  pointer-events: none;
 }
 
 /* All hail the almighty UB Funkey */
@@ -220,123 +289,8 @@ a:hover, button:hover {
   -moz-animation: float 2s ease-in-out infinite;
   -webkit-animation: float 2s ease-in-out infinite;
 }
-
 .funky img {
   width: 65%;
-}
-
-/* Declare Nav buttons grid */
-#nav {
-  z-index: 5;
-  display: grid;
-  position: relative;
-  top: -30%; left: 23%; right: 0; bottom: 0;
-  width: 115%;
-  height: 110%;
-  grid-template-columns: 6.5% 6.5% 6.5%; 
-  grid-template-rows: 18% 18% 18%; 
-  gap: 5% 0.5%;
-  grid-template-areas: 
-    "home about art"
-    "blog graph link"
-    "shrine tech misc";
-  align-items: stretch;
-}
-
-#nav a {
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-}
-
-#nav button {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  font-family: '04b', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1.25rem;
-  background-color: rgba(0, 0, 0, 0);
-  color: rgba(213, 242, 50, 0.65);
-  z-index: 5;
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  max-height: 100%;
-  border: groove 2px rgba(194, 255, 63, 0.5);
-  border-radius: 3px;
-  animation: glow-btn 3s ease-in-out infinite;
-  -moz-animation: glow-btn 3s ease-in-out infinite;
-  -webkit-animation: glow-btn 3s ease-in-out infinite;
-}
-
-#nav button:hover {
-  border-color: rgba(86, 252, 224, 0.7);
-  border-style: groove;
-  color: rgba(230, 251, 111, 0.95);
-  box-shadow: 0 0 15px 5px rgba(90, 255, 252, 0.65);
-  animation: none;
-  -webkit-animation: none;
-  -moz-animation: none;
-}
-
-#nav button:focus {
-  animation: glow-text 3s ease-in-out infinite;
-  -moz-animation: glow-text 3s ease-in-out infinite;
-  -webkit-animation: glow-text 3s ease-in-out infinite;
-  box-shadow: 0 0 15px 5px rgba(90, 255, 252, 0.55);
-}
-
-#bt-home {
-  grid-area: home;
-}
-
-#bt-about {
-  grid-area: about;
-}
-
-#bt-art {
-  grid-area: art;
-}
-
-#bt-blog {
-  grid-area: blog;
-}
-
-#bt-graph {
-  grid-area: graph;
-}
-
-#bt-link {
-  grid-area: link;
-}
-
-#bt-shrine {
-  grid-area: shrine;
-}
-
-#bt-tech {
-  grid-area: tech;
-}
-
-#bt-misc {
-  grid-area: misc;
-}
-
-/* Slug Artifacts */
-.artifact-container {
-  position: relative;
-  width: 25%;
-  top: -147%;
-  left: 49%;
-  right: 0;
-  bottom: 0;
-  opacity: .8;
-  pointer-events: none;
-}
-
-.artifact {
-  width: 100%;
 }
 
 /* translations */
@@ -352,7 +306,34 @@ a:hover, button:hover {
   transform: scaleY(-1);
 }
 
-/* animations */
+/* Very Simple CSS animations - I made most of these just using my brain and Mozilla's CSS documentation aside from the 'glow-text' one. That one was piecemealed from many, many different Codepens. */
+.flicker {
+  animation: flicker 1.4 linear 1;
+  -moz-animation: flicker 1.4s linear 1;
+  -webkit-animation: flicker 1.4s linear 1;
+}
+
+@keyframes flicker {
+    0% {opacity: 0;}
+    5% {opacity: .1;}
+    15% {opacity: 0;}
+    20% {opacity: .4;}
+    25% {opacity: .2;}
+    30%, 100% {opacity: 1;}
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+  -moz-animation: float 3s ease-in-out infinite;
+  -webkit-animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {transform: translateY(0px);}
+  50% {transform: translateY(10px);}
+  100% {transform: translateY(-0px);}
+}
+
 @keyframes glow {
   0% {
     opacity: 0.85;
@@ -393,35 +374,6 @@ a:hover, button:hover {
   }
 }
 
-.flicker {
-  animation: flicker 1.4 linear 1;
-  -moz-animation: flicker 1.4s linear 1;
-  -webkit-animation: flicker 1.4s linear 1;
-}
-
-@keyframes flicker {
-    0% {opacity: 0;}
-    5% {opacity: .1;}
-    15% {opacity: 0;}
-    20% {opacity: .4;}
-    25% {opacity: .2;}
-    30%, 100% {opacity: 1;}
-}
-
-.float {
-  animation: float 3s ease-in-out infinite;
-  -moz-animation: float 3s ease-in-out infinite;
-  -webkit-animation: float 3s ease-in-out infinite;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-@keyframes float {
-  0% {transform: translateY(0px);}
-  50% {transform: translateY(10px);}
-  100% {transform: translateY(-0px);}
-}
-
 .rotateY {
   animation: rotateY 8s linear infinite;
   -moz-animation: rotateY 8s linear infinite;
@@ -430,9 +382,14 @@ a:hover, button:hover {
 
 @keyframes rotateY {
   0% {
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);  }
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
   100% {
     transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
+    -moz-transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
+    -webkit-transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
   }
 }
 

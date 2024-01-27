@@ -6,7 +6,7 @@ New and improved! (again)
 - ~~Finish placing interface within grid area and position all header elements.~~
 - ~~Finalize landing page content.~~
 - ~~Finish site updates mini-section on landing page.~~
-- fix weird vent on iPad drawing and also write "uplink established"
+- fix weird vent on iPad drawing and also write "uplink established", also stretch navigation out and change its color to purple and green
 - Move old pages to new format:
   1. About
   2. Art

@@ -12,7 +12,7 @@ BIG TASK - Move old pages to new format:
 - Musical Artists page
 - Salty's Statsheet
 - Video Games
-- Art
+- ~~Art~~
   * gifcollage
   * collage (digital and analog)
   * webart

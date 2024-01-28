@@ -17,10 +17,30 @@ body {
   font-size: 1rem;
 }
 
-/* All the stuff  ya see */
+/* This is all the stuff ya see. I know the "frame-" part seems unnecessary, but it helped me stay organized and remember which stylesheet I'm working in. */
 .frame-main {
   width: 100%;
   padding: 0;
+}
+.frame-main button {
+  font-family: '04b', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1rem;
+  background-color: var(--slugblack);
+  color: var(--sluggreen);
+  border: 2px groove var(--slugblue);
+  box-shadow: 0 0 1px 1px rgba(185, 250, 255, 0.25);
+  border-radius: 2px;
+  padding: 0 5px;
+  animation: glow-text 3s ease-in-out infinite;
+  -moz-animation: glow-text 3s ease-in-out infinite;
+  -webkit-animation: glow-text 3s ease-in-out infinite;
+}
+.frame-main button:hover {
+  animation: pause;
+  -moz-animation: pause;
+  -webkit-animation: pause;
+  color: yellow;
+  scale: 1.05;
 }
 .frame-content {
   background-color: var(--slugblack);
@@ -31,6 +51,8 @@ body {
 }
 .frame-content b {
   color: var(--sluggreen);
+  font-weight: 500;
+  text-transform: uppercase;
 }
 .frame-content a {
   font-family: 'sh-pinscher', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -39,6 +61,7 @@ body {
   animation: glow-text-blue 3s infinite;
   -moz-animation: glow-text-blue 3s  infinite;
   -webkit-animation: glow-text-blue 3s infinite;
+  text-transform: uppercase;
 }
 .frame-content a:hover {
   color: var(--sluggreen);
@@ -130,7 +153,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--slugyellow-sh);
 }
 
-/* Flexin' - I am not really sure if this is the best method, but it's what works best for my HTML workflow. I combine the different classes for different DIVs depending on their intended function/appearance. For me, this is far less headache than making esoteric flex item classes for every single little thing. */
+/* Flexin' the flex boxes - I am not really sure if this is the best method to accomplish my layout, but it's what works best for my HTML workflow. I combine the different classes for different DIVs depending on their intended function/appearance. For me, this is far less headache than making esoteric flex item classes for every single little thing on every page. */
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -183,13 +206,15 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: nowrap;
 }
 .flex-nowrap img {
-  max-width: 100%;
+  max-width: auto;
 }
 .flex-nowrap img.left {
   margin: 5px 15px 5px 0px;
+  height: 100%;
 }
 .flex-nowrap img.right {
   margin: 5px 0px 5px 10px;
+  height: 100%;
 }
 .flex-wrap, .flex-nowrap {
   padding: 0;
@@ -214,7 +239,18 @@ h1, h2, h3, h4, h5, h6 {
   align-self: flex-end;
 }
 
+/* for image transparency */
+.holo {
+  opacity: 0.85;
+}
+
 /* anims */
+.shake-hover a > img:hover {
+  animation: shake 1.5s linear infinite;
+  -moz-animation: shake 1.5s linear infinite;
+  -webkit-animation: shake 1.5s linear infinite;
+}
+
 @keyframes glow-h {
   0%,
   100% {

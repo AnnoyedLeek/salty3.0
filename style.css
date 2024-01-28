@@ -271,7 +271,7 @@ a:hover, button:hover {
   height: 100%;
 }
 .nav-slug img {
-  opacity: .8;
+  opacity: .85;
   height: 100%;
   float:right;
   pointer-events: none;
@@ -299,7 +299,6 @@ a:hover, button:hover {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
-
 .flip {
   -ms-transform: scaleY(-1);
   -webkit-transform: scaleY(-1);
@@ -312,7 +311,6 @@ a:hover, button:hover {
   -moz-animation: flicker 1.4s linear 1;
   -webkit-animation: flicker 1.4s linear 1;
 }
-
 @keyframes flicker {
     0% {opacity: 0;}
     5% {opacity: .1;}
@@ -321,19 +319,16 @@ a:hover, button:hover {
     25% {opacity: .2;}
     30%, 100% {opacity: 1;}
 }
-
 .float {
   animation: float 3s ease-in-out infinite;
   -moz-animation: float 3s ease-in-out infinite;
   -webkit-animation: float 3s ease-in-out infinite;
 }
-
 @keyframes float {
   0% {transform: translateY(0px);}
   50% {transform: translateY(10px);}
   100% {transform: translateY(-0px);}
 }
-
 @keyframes glow {
   0% {
     opacity: 0.85;
@@ -345,7 +340,6 @@ a:hover, button:hover {
     opacity: 0.85;
   }
 }
-
 @keyframes glow-btn {
   0%,
   100% {
@@ -359,7 +353,6 @@ a:hover, button:hover {
     border-color: rgba(194, 255, 63, 0.75);
   }
 }
-
 @keyframes glow-text {
   0%,
   100% {
@@ -373,13 +366,11 @@ a:hover, button:hover {
     border-color: rgba(90, 205, 185, .85);
   }
 }
-
 .rotateY {
   animation: rotateY 8s linear infinite;
   -moz-animation: rotateY 8s linear infinite;
   -webkit-animation: rotateY 8s linear infinite;
 }
-
 @keyframes rotateY {
   0% {
     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
@@ -392,7 +383,11 @@ a:hover, button:hover {
     -webkit-transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
   }
 }
-
+.shake {
+  animation: shake 1s linear infinite;
+  -moz-animation: shake 1s linear infinite;
+  -webkit-animation: shake 1s linear infinite;
+}
 @keyframes shake {
   0% {
     transform: translate(2px, 1px) rotate(0deg);

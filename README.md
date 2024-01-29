@@ -35,17 +35,8 @@ Make new pages:
 - Blog
 - GFX
 - Misc.
-  * ~~Badges~~
-~~*site credits~~
   * site updates
   * Melonland shit
-  * Layout:
-      <article class="site-updates">
-        <section class="update">
-          <h3>Date</h3>
-          <p>Synopsis with links.</p>
-        </section>
-      </article>
 - Address any bugs with hi-res displays.
 - Design a mobile-friendly version of the site.
 - Figure out how to change the tab title when switching frames from the nav.
@@ -61,3 +52,5 @@ Make new pages:
 - ~~Finish site updates mini-section on landing page.~~
 - ~~fix weird vent on iPad drawing and also write "uplink established", also stretch navigation out and change its color to purple and green~~
 - ~~Figure out where to put guestbook~~
+~~site credits~~
+~~Badges~~

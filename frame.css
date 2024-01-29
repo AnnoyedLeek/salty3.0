@@ -63,12 +63,22 @@ main button:hover {
   -webkit-animation: glow-text-blue 3s infinite;
   text-transform: uppercase;
 }
-.frame-content a:hover {
+.frame-content a:hover, .big-link a:hover {
   color: var(--slugblue-sh);
   text-shadow: 0 0 5px pink;
   animation: pause;
   -moz-animation: pause;
   -webkit-animation: pause;
+}
+.big-link a {
+  font-family: '04b', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-decoration: none;
+  color: var(--slugblue);
+  animation: glow-text-blue 3s infinite;
+  -moz-animation: glow-text-blue 3s  infinite;
+  -webkit-animation: glow-text-blue 3s infinite;
+  text-transform: uppercase;
+  font-size: 1.5rem;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: '04b', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -83,17 +93,11 @@ h1, h2, h3, h4, h5, h6 {
 .frame-content h1 {
   font-size: 2.25rem;
   margin-top: 0.5%;
-}
-.frame-content h2 {
-  font-size: 2rem;
   margin-bottom: 5px;
 }
-.frame-content h3 {
-  font-size: 1.75rem;
-}
-.frame-content h4, .frame-content h5, .frame-content h6 {
-  font-size: 1.5rem;
-}
+.frame-content h2 {font-size: 2rem;}
+.frame-content h3 {font-size: 1.55rem;}
+.frame-content h4, .frame-content h5, .frame-content h6 {font-size: 1.25rem;}
 .frame-content hr {
   border: outset 2px var(--slugyellow);
   animation: glow-hr 2.5s ease-in-out infinite;
@@ -124,87 +128,50 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation: glow-p 3s infinite;
 }
 /* for big lists */
-.frame-big-list > .flex-nowrap h4 > a {
-  font-family: '04b', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1.4rem;
-}
-.frame-big-list > .flex-nowrap h4 {
-  width: 25%;
-}
-.frame-big-list > .flex-nowrap p {
-  width: 75%;
-  text-align: justify;
-}
+.frame-big-list > .flex-nowrap h4 {width: 25%;}
+.frame-big-list > .flex-nowrap p {width: 75%;text-align: justify;}
 
  /* Text Alignment */
-.center-text {
-  text-align: center;
-}
-.justify-text {
-  text-align: justify;
-}
-.right-align-text {
-  text-align: right;
-}
+.center-text {text-align: center;}
+.justify-text {text-align: justify;}
+.right-align-text {text-align: right;}
+.left-align-text {text-align: left;}
 
-/* Made this class for the "this page last updated" since I use it on every page */
+/* Footer (just the 'last updated' bit on each page) */
 .last-update p {
   text-align: center;
   font-size: 1rem;
   color: var(--slugyellow-sh);
+  margin-bottom: 5px;
 }
 
 /* Flexin' the flex boxes - I am not really sure if this is the best method to accomplish my layout, but it's what works best for my HTML workflow. I combine the different classes for different DIVs depending on their intended function/appearance. For me, this is far less headache than making esoteric flex item classes for every single little thing on every page. */
-.flex-wrap {
+.flex-wrap-col {
   display: flex;
   flex-wrap: wrap;
-}
-.flex-wrap hr, .flex-wrap-update hr {
-  width: 100%;
-}
-.flex-wrap-update {
-  display: flex;
-  flex-flow: column;
-}
-.flex-even-hz {
-  justify-content: space-evenly;
-}
-.flex-even-vert {
-  align-content: space-evenly;
-}
-.flex-around-hz {
-  justify-content: space-around;
-}
-.flex-even-hz {
-  justify-content: space-evenly;
-}
-.flex-btw-hz {
-  justify-content: space-between;
-}
-.flex-btw-vert {
-  align-content: space-between;
-}
-.flex-start-vert {
-  align-content: flex-start;
-}
-.flex-center-vert {
-  align-content: center;
-  align-items: center;
-}
-.flex-center-hz {
-  justify-content: center;
-  justify-items: center;
-}
-.flex-end-vert {
-  align-content: flex-end;
-  align-items: flex-end;
-}
-.flex-row {
-  flex-direction: row;
-}
-.flex-col {
   flex-direction: column;
 }
+.flex-wrap-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.flex-col {flex-direction: column;}
+.flex-row {flex-direction: row;}
+.flex-wrap-row hr, .flex-wrap-col hr {width: 100%;}
+.flex-even-hz {justify-content: space-evenly;}
+.flex-even-vert {align-content: space-evenly;}
+.flex-around-hz {justify-content: space-around;}
+.flex-btw-hz {justify-content: space-between;}
+.flex-btw-vert {align-content: space-between;}
+.flex-start-hz {justify-content: flex-start;}
+.flex-start-vert {align-content: flex-start;}
+.flex-center-hz {
+  justify-content: center;
+  align-items: center;
+}
+.flex-center-vert {align-content: center; align-items: center;}
+.flex-end-vert {align-content: flex-end;}
 .flex-nowrap {
   display: flex;
   flex-wrap: nowrap;
@@ -212,36 +179,20 @@ h1, h2, h3, h4, h5, h6 {
 .flex-nowrap img {
   max-width: auto;
 }
-.flex-nowrap > .left {
-  margin: 5px 15px 5px 0px;
+img.left {
+  margin: 5px 20px 5px 0px;
   height: 100%;
 }
-.flex-nowrap img.right {
-  margin: 5px 0px 5px 10px;
+img.right {
+  margin: 5px 0px 5px 20px;
   height: 100%;
 }
-.flex-wrap, .flex-nowrap {
+.flex-wrap-row, .flex-wrap-col, .flex-nowrap {
   padding: 0;
   margin: 0;
   justify-self: stretch;
 }
-.flex-pad {
-  padding: 10px 0;
-}
-
-/* flex items */
-.flex-update-h {
-  order: 1;
-  width: 22%;
-  margin-right: 10px;
-  align-self: flex-start;
-}
-.flex-update-p {
-  order: 2;
-  width: 100%;
-  text-align: justify;
-  align-self: flex-end;
-}
+.flex-pad {padding: 10px 0;}
 
 /* for image transparency */
 .holo {
@@ -254,7 +205,6 @@ h1, h2, h3, h4, h5, h6 {
   -moz-animation: shake 1.5s linear infinite;
   -webkit-animation: shake 1.5s linear infinite;
 }
-
 @keyframes glow-h {
   0%,
   100% {

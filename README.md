@@ -6,8 +6,6 @@ New and improved! (again)
 
 BIG TASK - Move old pages to new format:
 ---
-- ~~About~~
-- ~~Contact Page~~
 - Movies & TV page
 - Musical Artists page
 - Salty's Statsheet
@@ -19,28 +17,29 @@ BIG TASK - Move old pages to new format:
   * 3dart
   * digitalart
   * music
-- Linkfarm
-  *~~ get old version in place~~
-  * reorganize w/ new bookmarks and more effective sections
 - Wife Page
-- 4/20 page
 - Redo the guestbook page (on 123guestbook.com) >> after go live
----
-Make new pages:
-- Blog
-- GFX
-- Misc.
-  * site updates
   * Melonland shit
 - Address any bugs with hi-res displays.
 - Design a mobile-friendly version of the site.
 - Figure out how to change the tab title when switching frames from the nav.
 - Translate "About" stat sheet to new design with modal pop up.
+---
+- ~~About~~
+- ~~Contact Page~~
+- ~~Make new pages:~~
+  * ~~Blog~~
+  * ~~GFX~~
+  * ~~Misc.~~
+- ~~Linkfarm~~
+  *~~ get old version in place~~
+ ~~site updates~~
 - ~~tech page~~
 - ~~Link to Neocities profile somewhere.~~
 - ~~Shrines~~
   * ~~move wife page to shrines page~~
   * ~~add new shrine idea - 60s music~~
+  * ~~ 4/20 page~~
 - ~~Illustrate a new guestbook icon. :0~~
 - ~~Choose fonts for headers and buttons.~~
 - ~~Finalize layout CSS for 1080p displays.~~
@@ -52,5 +51,5 @@ Make new pages:
 - ~~Finish site updates mini-section on landing page.~~
 - ~~fix weird vent on iPad drawing and also write "uplink established", also stretch navigation out and change its color to purple and green~~
 - ~~Figure out where to put guestbook~~
-~~site credits~~
-~~Badges~~
+- ~~site credits~~
+- ~~Badges~~

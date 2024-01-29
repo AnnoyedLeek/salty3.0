@@ -20,7 +20,7 @@ BIG TASK - Move old pages to new format:
   * digitalart
   * music
 - Linkfarm
-  * get old version in place
+  *~~ get old version in place~~
   * reorganize w/ new bookmarks and more effective sections
 - Wife Page
 - 4/20 page

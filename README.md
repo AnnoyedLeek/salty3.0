@@ -7,7 +7,7 @@ New and improved! (again)
 BIG TASK - Move old pages to new format:
 ---
 - ~~About~~
-- Contact Page
+- ~~Contact Page~~
 - Movies & TV page
 - Musical Artists page
 - Salty's Statsheet
@@ -36,7 +36,7 @@ Make new pages:
 - GFX
 - Misc.
   * ~~Badges~~
-  * site credits
+~~*site credits~~
   * site updates
   * Melonland shit
   * Layout:

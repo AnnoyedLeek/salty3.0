@@ -22,14 +22,9 @@ BIG TASK - Move old pages to new format:
 - Linkfarm
   * get old version in place
   * reorganize w/ new bookmarks and more effective sections
-- ~~Shrines~~
-  * ~~move wife page to shrines page~~
-  * ~~add new shrine idea - 60s music~~
 - Wife Page
 - 4/20 page
-- tech page
 - Redo the guestbook page (on 123guestbook.com) >> after go live
-- Link to Neocities profile somewhere.
 ---
 Make new pages:
 - Blog
@@ -41,6 +36,11 @@ Make new pages:
 - Design a mobile-friendly version of the site.
 - Figure out how to change the tab title when switching frames from the nav.
 - Translate "About" stat sheet to new design with modal pop up.
+- ~~tech page~~
+- ~~Link to Neocities profile somewhere.~~
+- ~~Shrines~~
+  * ~~move wife page to shrines page~~
+  * ~~add new shrine idea - 60s music~~
 - ~~Illustrate a new guestbook icon. :0~~
 - ~~Choose fonts for headers and buttons.~~
 - ~~Finalize layout CSS for 1080p displays.~~

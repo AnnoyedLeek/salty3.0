@@ -16,13 +16,13 @@
 
 /* Declare color variables */
 :root {
-  --sluggreen: rgb(184, 235, 0);
-  --sluggreen-sh: rgb(137, 173, 18);
-  --slugblack: rgb(55, 55, 55);
-  --slugblue: rgb(90, 205, 185);
-  --slugblue-sh: rgb(222, 123, 239);
-  --slugyellow: rgb(254, 243, 122);
-  --slugyellow-sh: rgb(189, 179, 59);
+  --sluggreen: #b8eb00;
+  --sluggreen-sh: #89ad12;
+  --slugblack: #373737;
+  --slugblue: #5acdb9;
+  --slugblue-sh: #de7bef;
+  --slugyellow: #fef37a;
+  --slugyellow-sh: #bdb33b;
 }
 
 /* CSS reset */

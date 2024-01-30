@@ -19,12 +19,13 @@ BIG TASK - Move old pages to new format:
   * music
 - Wife Page
 - Redo the guestbook page (on 123guestbook.com) >> after go live
-  * Melonland shit
+- Melonland deed
 - Address any bugs with hi-res displays.
-- Design a mobile-friendly version of the site.
 - Figure out how to change the tab title when switching frames from the nav.
 - Translate "About" stat sheet to new design with modal pop up.
 ---
+- ~~Melonland surf club widget~~
+- ~~ Design a mobile-friendly version of the site.~~
 - ~~About~~
 - ~~Contact Page~~
 - ~~Make new pages:~~

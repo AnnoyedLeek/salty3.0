@@ -90,11 +90,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0;
 }
-.frame-content h1 {
-  font-size: 2.25rem;
-  margin-top: 0.5%;
-  margin-bottom: 5px;
-}
+.frame-content h1 {font-size: 2.25rem; margin-top: 0.5%; margin-bottom: 5px;}
 .frame-content h2 {font-size: 2rem;}
 .frame-content h3 {font-size: 1.55rem;}
 .frame-content h4, .frame-content h5, .frame-content h6 {font-size: 1.25rem;}
@@ -193,6 +189,11 @@ img.right {
   justify-self: stretch;
 }
 .flex-pad {padding: 10px 0;}
+
+/* Squeeze images into sections and articles */
+article img, section img {
+  max-width: 100%;
+}
 
 /* for image transparency */
 .holo {
@@ -293,13 +294,4 @@ a.small-link {
   -webkit-animation: glow-text-blue 3s infinite;
   text-transform: uppercase;
   font-size: 1.25rem;
-}
-.wife {
-  
-}
-.weed {
-  
-}
-.melonsurf {
-  
 }

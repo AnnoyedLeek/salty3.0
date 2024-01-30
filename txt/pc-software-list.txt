@@ -1,0 +1,14 @@
+saltedslug.net
+Created 12.19.2023.
+
+This is a pretty comprehensive list of the software that I use on my Windows PCs for my various hobbies. I find it's much easier to find functional, reliable software in a Linux environment, but I (unfortunately) require Windows for a lot of things, so I hope this list helps if you're looking for a similar setup on big boy Microsoft's tantrum-prone OS.
+
+Additionally, https://alternativeto.net/ is your best friend if you're looking for a wide-range of user-aggregated software alternatives. You can use all sorts of filters like price point (or open source), operating system, and a few other data points. There is also a pretty solid review system where developers are able to respond. AlternativeTo is awesome, seriously; they aren't paying me to say this.
+
+Anyways, on to the list. For reference, my main workstation is running Windows 11 (version 23H2 or greater) via Intel processing. I do not run WSL on my system <i>yet</i>. :) I am also running an .ISO of Win11 that I modded, so it's missing a lot of telemetry and invasive features, which is why I require a lot of alternatives to things like Photo Viewer, WordPad (R.I.P.), and other MS store apps.
+
+Built-In Tool Alternatives
+==========================
+Archiving/Compression/Extraction:
+    7-Zip https://7-zip.org/
+    Who doesn't love Igor Pavlov's gift to the world? It's free, it's open source, and it's lightyears faster than Windows' built-in utility.

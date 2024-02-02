@@ -51,7 +51,7 @@ html, body{
 
 /* Body styling - background image, font setting, and cursor */
 body {
-  background-image: url(img/bg.png);
+  background-image: url(img/bg.jpg);
   background-size: 100vw;
   background-repeat: repeat-y;
   font-size: 1rem;
@@ -118,7 +118,7 @@ header {grid-area: header;}
   height: 100%;
   z-index: 0;
 }
-.main, .main iframe {border-radius: 25px;}
+.main, .main iframe {border-radius: 25px; background-color: #373737;}
 .border-right {grid-area: border-right;}
 .footer {grid-area: footer;}
 
@@ -420,8 +420,18 @@ nav {
   -webkit-animation: float 5s ease-in-out infinite;
 }
 
+/* Cbox */
+.cbox {
+  width: 275px;
+  height: 175px;
+  position: absolute; 
+  top: 4.5%; right: 3.6%;
+  border-radius: 10px;
+  border: solid 2px var(--sluggreen);
+  opacity: .75;
+}
 /* mobile responsiveness  - pretty low effort right now, could be much better */
-@media (max-width: 600px) {
+@media (width <= 600px) {
   #wrapper, .container {
     display: contents;
     width: auto;
@@ -462,5 +472,20 @@ nav {
   }
   .main > iframe {
     border-radius: 5px;
+  }
+}
+/* media query for hi res screens */
+@media (width >= 1921px) {
+  .melon-surf {
+    top: 10%;
+    right: 22%;
+  }
+  .cbox {
+    top: 4%;
+    right: 8%;
+    z-index: 10;
+  }
+  nav {
+    top: 27.5%;
   }
 }

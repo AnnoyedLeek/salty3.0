@@ -1,10 +1,4 @@
-CHANGE TAB ON NAV to "tech stuff"
-- .gif archives
-
-AVATAR ARCHIVE??
-
 add quizzes to about page
-
 
 imood embed
 ===========

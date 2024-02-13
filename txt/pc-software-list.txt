@@ -12,3 +12,7 @@ Built-In Tool Alternatives
 Archiving/Compression/Extraction:
     7-Zip https://7-zip.org/
     Who doesn't love Igor Pavlov's gift to the world? It's free, it's open source, and it's lightyears faster than Windows' built-in utility.
+	
+File Explorer
+	Files https://files.community/
+	I really f*cking hate File Explorer. It sucks. It freezes up, it crashes, it never refreshes in real time, the tab feature doesn't really work in Windows 11. I hate it. I recently converted to Files, and it just works.

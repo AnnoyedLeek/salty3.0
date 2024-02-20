@@ -14,16 +14,20 @@ BIG TASK - Move old pages to new format:
   * gifcollage
   * collage (digital and analog)
   * webart
-  * 3dart
+  * add 3d art screenshots eventually
   * digitalart
   * music
-- Wife Page
-- Redo the guestbook page (on 123guestbook.com) >> after go live
-- Melonland deed
-- Address any bugs with hi-res displays.
-- Figure out how to change the tab title when switching frames from the nav.
-- Translate "About" stat sheet to new design with modal pop up.
+- Reintegrate the "I Love My Wife" Page
+- Reintegrate the 4/20 page
 ---
+## Other To-Do
+- Melonland deed
+- Figure out how to change the tab title when switching frames from the nav. (probably some JavaScript wizardry, maybe ask Melon?)
+- Translate "About" stat sheet to new design with modal pop up?
+---
+### Completed Tasks
+- ~~Address bugs with hi-res displays.~~
+- ~~Redo the guestbook page (on 123guestbook.com) >> after go live~~
 - ~~Melonland surf club widget~~
 - ~~ Design a mobile-friendly version of the site.~~
 - ~~About~~

@@ -168,6 +168,7 @@ h1, h2, h3, h4, h5, h6 {
 .flex-end-vert {align-content: flex-end;}
 .flex-nowrap {display: flex; flex-wrap: nowrap;}
 .flex-nowrap img {max-width: auto;}
+/* img classes for floating images in a flex container left or right */
 img.left {
   margin: 5px 20px 5px 0px;
   height: 100%;

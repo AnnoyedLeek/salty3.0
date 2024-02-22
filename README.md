@@ -6,10 +6,7 @@ New and improved! (again)
 
 BIG TASK - Move old pages to new format:
 ---
-- Movies & TV page
-- Musical Artists page
 - Salty's Statsheet
-- Video Games
 - ~~Art~~
   * gifcollage
   * collage (digital and analog)
@@ -26,6 +23,9 @@ BIG TASK - Move old pages to new format:
 - Translate "About" stat sheet to new design with modal pop up?
 ---
 ### Completed Tasks
+- ~~Musical Artists page~~
+- ~~Movies & TV page~~
+- ~~Video Games~~
 - ~~Address bugs with hi-res displays.~~
 - ~~Redo the guestbook page (on 123guestbook.com) >> after go live~~
 - ~~Melonland surf club widget~~

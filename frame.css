@@ -168,14 +168,13 @@ h1, h2, h3, h4, h5, h6 {
 .flex-end-vert {align-content: flex-end;}
 .flex-nowrap {display: flex; flex-wrap: nowrap;}
 .flex-nowrap img {max-width: auto;}
-/* img classes for floating images in a flex container left or right */
+
+/* class to a appropriate margins to images in a flex container */
 img.left {
   margin: 5px 20px 5px 0px;
-  height: 100%;
 }
 img.right {
   margin: 5px 0px 5px 20px;
-  height: 100%;
 }
 .flex-wrap-row, .flex-wrap-col, .flex-nowrap {
   padding: 0;
@@ -185,20 +184,21 @@ img.right {
 .flex-pad {padding: 10px 0;}
 
 /* Squeeze images into sections and articles */
-article img, section img {
-  max-width: 100%;
-}
+article img, section img {max-width: 100%;}
 
 /* for image transparency */
-.holo {
-  opacity: 0.85;
-}
+.holo {opacity: 0.85;}
 
 /* anims */
 .shake-hover a > img:hover {
   animation: shake 1.5s linear infinite;
   -moz-animation: shake 1.5s linear infinite;
   -webkit-animation: shake 1.5s linear infinite;
+}
+section img:hover {
+  animation: phase 3s ease-in-out infinite;
+  -moz-animation: phase 3s ease-in-out infinite;
+  -webkit-animation: phase 3s ease-in-out infinite;
 }
 @keyframes glow-h {
   0%,
@@ -267,7 +267,7 @@ article img, section img {
 @keyframes phase {
   0%, 
   100% {
-    opacity: .7;
+    opacity: .8;
   }
   50% {
     opacity: 1;
@@ -278,6 +278,8 @@ article img, section img {
 .badges img:hover {
   scale: 1.05;
   animation: phase 2s ease-in-out infinite;
+  -moz-animation: phase 2s ease-in-out infinite;
+  -webkit-animation: phase 2s ease-in-out infinite;
 }
 a.small-link {
   font-family: 'sh-pinscher', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;

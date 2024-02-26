@@ -21,6 +21,7 @@ BIG TASK - Move old pages to new format:
 - Melonland deed
 - Figure out how to change the tab title when switching frames from the nav. (probably some JavaScript wizardry, maybe ask Melon?)
 - Translate "About" stat sheet to new design with modal pop up?
+- Create a button to turn off animations
 ---
 ### Completed Tasks
 - ~~Musical Artists page~~

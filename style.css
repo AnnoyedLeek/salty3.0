@@ -297,6 +297,9 @@ nav {
   -moz-animation: float 3s ease-in-out infinite;
   -webkit-animation: float 3s ease-in-out infinite;
 }
+.float img:hover {
+  animation-play-state: paused;
+}
 @keyframes float {
   0% {transform: translateY(0px);}
   50% {transform: translateY(10px);}

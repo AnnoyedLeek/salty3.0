@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
 .flex-btw-hz {justify-content: space-between;}
 .flex-btw-vert {align-content: space-between;}
 .flex-start-hz {justify-content: flex-start;}
-.flex-start-vert {align-content: flex-start;}
+.flex-start-vert {align-content: flex-start; align-items: flex-start;}
 .flex-center-hz {justify-content: center; align-items: center;}
 .flex-center-vert {align-content: center; align-items: center;}
 .flex-end-vert {align-content: flex-end;}
@@ -195,7 +195,7 @@ article img, section img {max-width: 100%;}
   -moz-animation: shake 1.5s linear infinite;
   -webkit-animation: shake 1.5s linear infinite;
 }
-section img:hover {
+img:hover {
   animation: phase 3s ease-in-out infinite;
   -moz-animation: phase 3s ease-in-out infinite;
   -webkit-animation: phase 3s ease-in-out infinite;

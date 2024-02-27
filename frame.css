@@ -186,9 +186,10 @@ img.right {
 /* Squeeze images into sections and articles */
 article img, section img {max-width: 100%;}
 
-/* for image transparency */
-.holo {opacity: 0.85;}
-
+/* gallery stuff */
+.width-250 {
+  max-width: 250px;
+}
 /* anims */
 .shake-hover a > img:hover {
   animation: shake 1.5s linear infinite;

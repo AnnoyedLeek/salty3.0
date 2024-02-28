@@ -18,7 +18,7 @@ body {
   font-size: 1rem;
 }
 
-/* This is all the stuff ya see. I know the "frame-" part seems unnecessary, but it helped me stay organized and remember which stylesheet I'm working in. */
+/* This is all the stuff you see within the frame. I know the "frame-" naming part seems unnecessary, but it helped me stay organized and remember which stylesheet I'm working in. */
 main {
   width: 100%;
   padding: 0;
@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0;
 }
-.frame-content h1 {font-size: 2.25rem; margin-top: 0.5%; margin-bottom: 5px;}
+.frame-content h1 {font-size: 2.25rem; margin-top: 1%; margin-bottom: 5px;}
 .frame-content h2 {font-size: 2rem;}
 .frame-content h3 {font-size: 1.55rem;}
 .frame-content h4, .frame-content h5, .frame-content h6 {font-size: 1.25rem;}
@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: .75;
   margin: 10px 0;
 }
-.frame-content p, .frame-content article, .frame-content section {
+.frame-content p, .frame-content article p, .frame-content section p {
   font-family: 'sh-pinscher', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: var(--slugyellow);
   font-size: 1.2rem;
@@ -165,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
 .flex-start-vert {align-content: flex-start; align-items: flex-start;}
 .flex-center-hz {justify-content: center; align-items: center;}
 .flex-center-vert {align-content: center; align-items: center;}
-.flex-end-vert {align-content: flex-end;}
+.flex-end-vert {align-content: flex-end; align-items: flex-end;}
 .flex-nowrap {display: flex; flex-wrap: nowrap;}
 .flex-nowrap img {max-width: auto;}
 

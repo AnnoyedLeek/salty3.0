@@ -7,17 +7,14 @@ New and improved! (again)
 BIG TASK - Move old pages to new format:
 ---
 - Salty's Statsheet
-- ~~Art~~
-  * gifcollage
-  * collage (digital and analog)
-  * webart
-  * add 3d art screenshots eventually
-  * digitalart
-  * music
-- Reintegrate the "I Love My Wife" Page
+- gifcollage
+- webart
+- digital collage
+- digital drawings
 - Reintegrate the 4/20 page
 ---
 ## Other To-Do
+- add more blender 3d art screenshots (eventually)
 - make an animated 88x31 button, maybe a couple
 - Melonland deed
 - Figure out how to change the tab title when switching frames from the nav. (probably some JavaScript wizardry, maybe ask Melon?)
@@ -25,6 +22,9 @@ BIG TASK - Move old pages to new format:
 - Create a button to turn off animations
 ---
 ### Completed Tasks
+- ~~collage (analog)~~
+- ~~Art~~
+- ~~Reintegrate the "I Love My Wife" Page~~
 - ~~Musical Artists page~~
 - ~~Movies & TV page~~
 - ~~Video Games~~

@@ -160,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
 .flex-even-vert {align-content: space-evenly;}
 .flex-around-hz {justify-content: space-around;}
 .flex-btw-hz {justify-content: space-between;}
-.flex-btw-vert {align-content: space-between;}
+.flex-btw-vert {align-content: space-between; align-items: space-between;}
 .flex-start-hz {justify-content: flex-start;}
 .flex-start-vert {align-content: flex-start; align-items: flex-start;}
 .flex-center-hz {justify-content: center; align-items: center;}
@@ -189,6 +189,9 @@ article img, section img {max-width: 100%;}
 /* gallery stuff */
 .width-250 {
   max-width: 250px;
+}
+.circle-img {
+  border-radius: 10rem;
 }
 /* anims */
 .shake-hover a > img:hover {

@@ -359,7 +359,7 @@ nav {
     -webkit-transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
   }
 }
-.shake {
+.shake img:hover {
   animation: shake 1s linear infinite;
   -moz-animation: shake 1s linear infinite;
   -webkit-animation: shake 1s linear infinite;

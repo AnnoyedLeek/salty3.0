@@ -77,6 +77,7 @@ body {
 }
 #statuscafe-username {
   color: var(--slugblue-sh);
+  margin-bottom: 6px;
 }
 #statuscafe-username a {
   color: var(--slugblue);

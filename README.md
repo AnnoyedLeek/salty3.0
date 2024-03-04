@@ -7,16 +7,15 @@ New and improved! (again)
 BIG TASK - Move old pages to new format:
 ---
 - Salty's Statsheet
-- gifcollage
 - webart
 - digital collage
 - digital drawings
-- Reintegrate the 4/20 page
+- Reintegrate the 420 page
 ---
 ## Other To-Do
+- pc setup page (w/ 2.0 pictures folder, new pics of new desk and baubles, sticker cutouts)
 - add edm to the music page
 - make an animated 88x31 button
-- add cbox/status.cafe/melon widget creds to the site credits page
 - Melonland deed
 - Figure out how to change the tab title when switching frames from the nav. (probably some JavaScript wizardry, maybe ask Melon?)
 - Translate "About" stat sheet to new design (with modal pop up?)
@@ -25,6 +24,8 @@ BIG TASK - Move old pages to new format:
 - make more interesting background
 ---
 ### Completed Tasks
+- ~~gifcollage~~
+- ~~add cbox/status.cafe/melon widget creds to the site credits page~~
 - ~~add more blender 3d art screenshots (eventually)~~
 - ~~make a new 88x31 button~~
 - ~~collage (analog)~~

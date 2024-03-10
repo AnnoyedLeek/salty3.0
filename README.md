@@ -25,7 +25,7 @@ BIG TASK - Move old pages to new format:
 - make more interesting background
 ---
 ### Completed Tasks
--
+- ~~fix tabs not updating on iframe target change (thanks melon)~~
 - ~~add more blender 3d art screenshots (eventually)~~
 - ~~make a new 88x31 button~~
 - ~~collage (analog)~~

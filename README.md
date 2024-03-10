@@ -18,13 +18,14 @@ BIG TASK - Move old pages to new format:
 - make an animated 88x31 button
 - add cbox/status.cafe/melon widget creds to the site credits page
 - Melonland deed
-- Figure out how to change the tab title when switching frames from the nav. (probably some JavaScript wizardry, maybe ask Melon?)
+
 - Translate "About" stat sheet to new design (with modal pop up?)
 - Create a button to turn off all animations
 - make different themed frames/looks
 - make more interesting background
 ---
 ### Completed Tasks
+-
 - ~~add more blender 3d art screenshots (eventually)~~
 - ~~make a new 88x31 button~~
 - ~~collage (analog)~~

@@ -14,6 +14,8 @@ BIG TASK - Move old pages to new format:
 - Reintegrate the 4/20 page
 ---
 ## Other To-Do
+- shrine to good movie video games
+- add lotr rotk to fave games
 - add edm to the music page
 - make an animated 88x31 button
 - add cbox/status.cafe/melon widget creds to the site credits page
